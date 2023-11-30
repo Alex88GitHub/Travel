@@ -34,7 +34,14 @@ body {
   background-color: $color-default-white;
 }
 
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
 a {
+  display: block;
   color: $color-default-black;
   text-decoration: none;
 }

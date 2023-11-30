@@ -1,23 +1,28 @@
 .btn {
   display: inline-flex;
-  padding: 10px 20px;
+  padding: 20px;
+
+  font-family: $ff-placeholder;
+  font-weight: 500;
 
   color: $color-default-white;
 
-  background-color: $color-neon-blue;
+  background-color: $color-navy-blue;
   border: none;
   cursor: pointer;
 
   transition: opacity $trans-default;
 
-  &--red {
-    background-color: $color-torch-red;
-  }
-
   &:disabled {
     opacity: 0.5;
 
     pointer-events: none;
+  }
+
+  &--hero {
+    position: relative;
+    z-index: 3;
+    margin: 0 0 134px;
   }
 
   @include hover-focus {

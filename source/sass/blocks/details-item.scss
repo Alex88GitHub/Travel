@@ -1,0 +1,17 @@
+.details-item {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 14px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.details-item svg {
+ fill: $color-default-white;
+}
+
+.details-item span {
+  font-size: $fz-xsmall;
+  line-height: 16px;
+  color: $color-default-white;
+}

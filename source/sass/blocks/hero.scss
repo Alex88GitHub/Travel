@@ -1,0 +1,49 @@
+.hero {
+ max-width: $vp-1440;
+ margin: 0 auto;
+ padding-bottom: 80px;
+}
+
+.hero__text-content {
+  position: relative;
+  z-index: 3;
+  max-width: 780px;
+  margin: 0 0 35px;
+
+  h1 {
+    margin-bottom: 25px;
+    padding-top: 200px;
+    font-size: 77px;
+    line-height: 77px;
+    font-weight: 800;
+    color: $color-default-white;
+  }
+
+  p {
+    max-width: 420px;
+    margin: 0 0 15px;
+    font-size: $fz-big;
+    line-height: 24px;
+    font-weight: 400;
+    color: $color-default-white;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+.hero img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.hero__details-wrapper {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
