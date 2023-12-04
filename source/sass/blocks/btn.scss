@@ -21,8 +21,24 @@
 
   &--hero {
     position: relative;
-    z-index: 3;
+    z-index: 1;
     margin: 0 0 134px;
+    line-height: 16px;
+  }
+
+  &--play {
+    width: 56px;
+    height: 56px;
+    background-color: $color-transparent;
+    border-radius: 50%;
+    border: 1px solid $color-default-white;
+  }
+
+  &--play svg {
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translate(0, -50%);
   }
 
   @include hover-focus {
