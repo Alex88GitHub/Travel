@@ -23,5 +23,9 @@
     height: 100%;
     padding-top: 200px;
     padding-bottom: 80px;
+
+    // @include vp-1199 {
+    //   min-height: 1024px;
+    // }
   }
 }
