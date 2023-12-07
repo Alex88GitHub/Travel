@@ -2,6 +2,14 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  margin: 0 40px;
-  padding: 0;
+
+  @include vp-1199 {
+    display: block;
+  }
+}
+
+.navigation-list__item:not(:last-child) {
+  @include vp-1199 {
+    margin: 0 0 6px;
+  }
 }

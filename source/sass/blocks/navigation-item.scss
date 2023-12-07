@@ -4,5 +4,12 @@
 
 .navigation-item__link {
   padding: 10px 0;
+  line-height: $lh-small;
   color: $color-default-white;
+
+  @include vp-1199 {
+    font-weight: $fw-bold;
+    letter-spacing: 0.64px;
+    text-transform: uppercase;
+  }
 }
