@@ -24,6 +24,7 @@ $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0
 //font-size
 $fz-h1-desktop:                     77px;
 $fz-h1-tablet:                      56px;
+$fz-h1-mobile:                      26px;
 $fz-h2:                             55px;
 $fz-h3:                             35px;
 $fz-h4:                             24px;
@@ -32,12 +33,13 @@ $fz-h6:                             18px;
 
 $fz-default:                        16px;
 $fz-big:                            17px;
-$fz-small:                          14px;
+$fz-small:                          15px;
 $fz-xsmall:                         12px;
 
 //line-height
 $lh-h1-desktop:                     $fz-h1-desktop;
 $lh-h1-tablet:                      $fz-h1-tablet;
+$lh-h1-mobile:                      $fz-h1-mobile;
 $lh-h2:                             $fz-h2;
 $lh-h3:                             $fz-h3;
 $lh-h4:                             $fz-h4;
@@ -46,7 +48,8 @@ $lh-h6:                             $fz-h6;
 
 $lh-big:                            24px;
 $lh-default:                        22px;
-$lh-small:                          16px;
+$lh-small:                          20px;
+$lh-xsmall:                         16px;
 
 //font-weight
 $fw-extra-bold:                     800;

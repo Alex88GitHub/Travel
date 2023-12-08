@@ -4,6 +4,9 @@ import {Form} from './modules/form-validate/form';
 import {setupVideo} from './modules/video';
 import {initSliders} from './modules/init-sliders';
 import {setupAudio} from './modules/audio';
+import {initJs} from './modules/init-js';
+import './modules/breakpoints';
+import './modules/burger-menu';
 
 // ---------------------------------
 
@@ -13,6 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  initJs();
   setupVideo();
   setupAudio();
 

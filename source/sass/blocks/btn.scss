@@ -1,6 +1,6 @@
 .btn {
   display: inline-flex;
-  padding: 20px;
+  padding: 20px 34px;
 
   font-family: $ff-placeholder;
   font-weight: $fw-medium;
@@ -20,12 +20,13 @@
   }
 
   &--hero {
-    line-height: $lh-small;
+    line-height: $lh-xsmall;
   }
 
   &--play {
     width: 56px;
     height: 56px;
+    padding: 0;
     background-color: $color-transparent;
     border-radius: 50%;
     border: 1px solid $color-default-white;
