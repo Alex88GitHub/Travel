@@ -138,7 +138,7 @@
           <nav class="header__navigation header__navigation-no-js">
             <ul class="header__navigation-list navigation-list">
               <li class="navigation-list__item navigation-item">
-                <a class="navigation-item__link" href="">Туры</a>
+                <a class="navigation-item__link" href="#tours">Туры</a>
               </li>
               <li class="navigation-list__item navigation-item">
                 <a class="navigation-item__link" href="">Обучение</a>
@@ -161,7 +161,7 @@
         </div>
       </header>
 
-    <main>
+      <main>
 
         <section class="hero swiper" data-slider="hero-slider">
           <div class="hero__slider-wrapper swiper-wrapper swiper-no-swiping">
@@ -216,42 +216,42 @@
             <div class="hero__slide swiper-slide" data-slider="hero-slide">
               <div class="container container--hero">
                 <!-- <picture> -->
-                  <!-- <source media="(max-width: 1199px)"
+                <!-- <source media="(max-width: 1199px)"
                   srcset="img/hero-background-tablet-2.jpg 1x, img/hero-background-tablet-2@2x.jpg 2x" width="768"
                   height="1024"> -->
-                  <img src="img/hero-background-desktop-2.jpg" srcset="img/hero-background-desktop-2@2x.jpg 2x"
-                    width="1440" height="800" alt="">
-                  <!-- </picture> -->
-                  <div class="hero__text-content">
-                    <h1>Невероятная природа Камчатки</h1>
-                    <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых
-                      нетронутых
-                      уголков дикой природы в мире.</p>
+                <img src="img/hero-background-desktop-2.jpg" srcset="img/hero-background-desktop-2@2x.jpg 2x"
+                  width="1440" height="800" alt="">
+                <!-- </picture> -->
+                <div class="hero__text-content">
+                  <h1>Невероятная природа Камчатки</h1>
+                  <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых
+                    нетронутых
+                    уголков дикой природы в мире.</p>
+                </div>
+                <a class="hero__btn btn btn--hero">Смотреть тур</a>
+                <div class="hero__details-wrapper">
+                  <div class="details-item">
+                    <svg width="12" height="12" role="img">
+                      <use href="img/sprite.svg#moon-icon"></use>
+                    </svg>
+                    <span>9 дней/10 ночей</span>
                   </div>
-                  <a class="hero__btn btn btn--hero">Смотреть тур</a>
-                  <div class="hero__details-wrapper">
-                    <div class="details-item">
-                      <svg width="12" height="12" role="img">
-                        <use href="img/sprite.svg#moon-icon"></use>
-                      </svg>
-                      <span>9 дней/10 ночей</span>
-                    </div>
-                    <div class="details-item">
-                      <svg width="12" height="12" role="img">
-                        <use href="img/sprite.svg#level-icon"></use>
-                      </svg>
-                      <span>Средняя сложность</span>
-                    </div>
+                  <div class="details-item">
+                    <svg width="12" height="12" role="img">
+                      <use href="img/sprite.svg#level-icon"></use>
+                    </svg>
+                    <span>Средняя сложность</span>
                   </div>
-                  <div class="hero__photo-wrapper">
-                    <picture>
-                      <source media="(max-width: 1199px)"
-                        srcset="img/hero-image-2-tablet.png 1x, img/hero-image-2-tablet@2x.png 2x" width="442"
-                        height="365">
-                      <img src="img/hero-image-2-desktop.png" srcset="img/hero-image-2-desktop@2x.png 2x" width="410"
-                        height="459" alt="Фотокарточки экскурсий.">
-                    </picture>
-                  </div>
+                </div>
+                <div class="hero__photo-wrapper">
+                  <picture>
+                    <source media="(max-width: 1199px)"
+                      srcset="img/hero-image-2-tablet.png 1x, img/hero-image-2-tablet@2x.png 2x" width="442"
+                      height="365">
+                    <img src="img/hero-image-2-desktop.png" srcset="img/hero-image-2-desktop@2x.png 2x" width="410"
+                      height="459" alt="Фотокарточки экскурсий.">
+                  </picture>
+                </div>
               </div>
             </div>
             <div class="hero__slide swiper-slide" data-slider="hero-slide">
@@ -290,7 +290,165 @@
           </div>
           <div class="hero__pagination swiper-pagination" data-slider="hero-pagination"></div>
         </section>
+    </div>
+    <section class="tours" id="tours" data-test="tours">
+      <div class="container">
+        <div class="tours__title-wrapper">
+          <h2 class="tours__title">Ближайшие туры</h2>
+          <div class="tours__slider-btn-wrapper">
+            <button class="tours__btn-prev swiper-button-prev">
+              <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="tours__btn-next  swiper-button-next">
+              <span class="visually-hidden">Следующий</span>
+            </button>
+          </div>
+        </div>
+        <div class="tours__slider swiper">
+          <div class="tours__slider-wrapper swiper-wrapper">
+            <div class="tours__slide swiper-slide tours-slide">
+              <img src="img/tours-image-1.jpg" srcset="img/tours-image-1@2x.jpg 2x" width="380" height="416">
+              <div class="tours-slide__content-wrapper">
+                <div class="tours-slide__info">
+                  <div class="tours-slide__place">
+                    <svg width="16" height="16">
+                      <use href="img/sprite.svg#tours-geolocation-icon"></use>
+                    </svg>
+                    <span class="tours-slide__place-text">Кавказ</span>
+                  </div>
+                  <div class="tours-slide__duration">
+                    <div class="tours-slide__days">
+                      <svg width="20" height="20">
+                        <use href="img/sprite.svg#sun-icon"></use>
+                      </svg>
+                      <span class="tours-slide__duration-text">4 дня</span>
+                    </div>
+                    <div class="tours-slide__nights">
+                      <svg width="20" height="20">
+                        <use href="img/sprite.svg#moon-icon"></use>
+                      </svg>
+                      <span class="tours-slide__duration-text">3 ночи</span>
+                    </div>
+                  </div>
+                </div>
+                <h3 class="tours-slide__title">Путешествие вокруг Эльбруса</h3>
+                <div class="tours-slide__details">
+                  <div class="tours-slide__difficulty">
+                    <p class="tours-slide__details-title">Сложность:</p>
+                    <svg width="84" height="16">
+                      <use href="img/sprite.svg#stars-4-icon"></use>
+                    </svg>
+                  </div>
+                  <div class="tours-slide__date">
+                    <p class="tours-slide__details-title">Даты набора:</p>
+                    <span class="tours-slide__details-text">12.06–19.06</span>
+                  </div>
+                  <div class="tours-slide__group">
+                    <p class="tours-slide__details-title">Группа:</p>
+                    <span class="tours-slide__details-text">до 15 чел.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tours__slide swiper-slide tours-slide">
+              <img src="img/tours-image-2.jpg" srcset="img/tours-image-2@2x.jpg 2x" width="380" height="416">
+              <div class="tours-slide__content-wrapper">
+                <div class="tours-slide__info">
+                  <div class="tours-slide__place">
+                    <svg width="16" height="16">
+                      <use href="img/sprite.svg#tours-geolocation-icon"></use>
+                    </svg>
+                    <span class="tours-slide__place-text">Алтай</span>
+                  </div>
+                  <div class="tours-slide__duration">
+                    <div class="tours-slide__days">
+                      <svg width="20" height="20">
+                        <use href="img/sprite.svg#sun-icon"></use>
+                      </svg>
+                      <span class="tours-slide__duration-text">14 дней</span>
+                    </div>
+                    <div class="tours-slide__nights">
+                      <svg width="20" height="20">
+                        <use href="img/sprite.svg#moon-icon"></use>
+                      </svg>
+                      <span class="tours-slide__duration-text">13 ночей</span>
+                    </div>
+                  </div>
+                </div>
+                <h3 class="tours-slide__title">Путь к подножию Белухи</h3>
+                <div class="tours-slide__details">
+                  <div class="tours-slide__difficulty">
+                    <p class="tours-slide__details-title">Сложность:</p>
+                    <svg width="84" height="16">
+                      <use href="img/sprite.svg#stars-3-icon"></use>
+                    </svg>
+                  </div>
+                  <div class="tours-slide__date">
+                    <p class="tours-slide__details-title">Даты набора:</p>
+                    <span class="tours-slide__details-text">14.06–23.06</span>
+                  </div>
+                  <div class="tours-slide__group">
+                    <p class="tours-slide__details-title">Группа:</p>
+                    <span class="tours-slide__details-text">до 25 чел.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tours__slide swiper-slide tours-slide">
+              <img src="img/tours-image-3.jpg" srcset="img/tours-image-3@2x.jpg 2x" width="380" height="416">
+              <div class="tours-slide__content-wrapper">
+                <div class="tours-slide__info">
+                  <div class="tours-slide__place">
+                    <svg width="16" height="16">
+                      <use href="img/sprite.svg#tours-geolocation-icon"></use>
+                    </svg>
+                    <span class="tours-slide__place-text">Адыгея</span>
+                  </div>
+                  <div class="tours-slide__duration">
+                    <div class="tours-slide__days">
+                      <svg width="20" height="20">
+                        <use href="img/sprite.svg#sun-icon"></use>
+                      </svg>
+                      <span class="tours-slide__duration-text">7 дней</span>
+                    </div>
+                    <div class="tours-slide__nights">
+                      <svg width="20" height="20">
+                        <use href="img/sprite.svg#moon-icon"></use>
+                      </svg>
+                      <span class="tours-slide__duration-text">6 ночей</span>
+                    </div>
+                  </div>
+                </div>
+                <h3 class="tours-slide__title">Через Фишт к Чёрному морю и обратно</h3>
+                <div class="tours-slide__details">
+                  <div class="tours-slide__difficulty">
+                    <p class="tours-slide__details-title">Сложность:</p>
+                    <svg width="84" height="16">
+                      <use href="img/sprite.svg#stars-4-icon"></use>
+                    </svg>
+                  </div>
+                  <div class="tours-slide__date">
+                    <p class="tours-slide__details-title">Даты набора:</p>
+                    <span class="tours-slide__details-text">15.07–19.07</span>
+                  </div>
+                  <div class="tours-slide__group">
+                    <p class="tours-slide__details-title">Группа:</p>
+                    <span class="tours-slide__details-text">до 22 чел.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tours__link-wrapper">
+          <a class="tours__link" href="#">Показать все туры</a>
+          <svg width="6" height="12">
+            <use href="img/sprite.svg#arrow-right-icon"></use>
+          </svg>
+        </div>
       </div>
+    </section>
+
     </main>
     <footer>
       <div class="container"></div>

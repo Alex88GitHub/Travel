@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* stylelint-disable */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -1258,7 +1259,7 @@ html {
   font-size: 16px;
   line-height: 24px;
   font-family: "Montserrat", "Arial", sans-serif;
-  color: #000000;
+  color: #2d383f;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -1278,7 +1279,7 @@ h3 {
 
 a {
   display: block;
-  color: #000000;
+  color: #2d383f;
   text-decoration: none;
 }
 
@@ -1296,7 +1297,7 @@ textarea {
 input:-webkit-autofill {
   -webkit-box-shadow: inset 0 0 0 1000px #ffffff;
           box-shadow: inset 0 0 0 1000px #ffffff;
-  -webkit-text-fill-color: #000000;
+  -webkit-text-fill-color: #2d383f;
 }
 
 input,
@@ -1551,7 +1552,7 @@ button,
           flex-direction: column;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(45, 56, 63, 0.8);
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
           transform: scale(1.2);
@@ -2281,8 +2282,8 @@ button,
   .header__wrapper-menu-opened {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (auto)[3];
-    grid-template-columns: repeat(3, auto);
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
     -ms-grid-rows: (auto)[2];
     grid-template-rows: repeat(2, auto);
     row-gap: 40px;
@@ -2312,6 +2313,11 @@ button,
   }
 }
 
+.header__wrapper-menu-opened .header__logo {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
 @media (max-width: 767px) {
   .header__wrapper-menu-opened .header__navigation--opened {
     grid-row: 3/-1;
@@ -2319,12 +2325,9 @@ button,
   }
 }
 
-@media (max-width: 1199px) {
-  .header__wrapper-menu-opened svg,
+.header__wrapper-menu-opened svg,
 .header__wrapper-menu-opened a {
-    display: block;
-    color: #2D383F;
-  }
+  color: #2D383F;
 }
 
 .header__phone {
@@ -2734,6 +2737,229 @@ button,
   .hero .hero__pagination {
     bottom: 33px;
   }
+}
+
+.tours-slide {
+  position: relative;
+  padding: 30px 20px;
+}
+
+.tours-slide img {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+
+.tours-slide__content-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.tours-slide__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+.tours-slide__place {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6px 12px;
+  background-color: #0266c1;
+}
+
+.tours-slide__place svg {
+  display: block;
+}
+
+.tours-slide__place-text,
+.tours-slide__duration-text {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.tours-slide__duration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 14px;
+}
+
+.tours-slide__days,
+.tours-slide__nights {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+}
+
+.tours-slide__days svg,
+.tours-slide__nights svg {
+  color: #ffffff;
+}
+
+.tours-slide__title {
+  position: relative;
+  width: 233px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.tours-slide__title::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -15px;
+  width: 80px;
+  height: 1px;
+  background-color: #ffffff;
+  opacity: 0.2;
+}
+
+.tours-slide__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tours-slide__difficulty .tours-slide__details-title {
+  margin: 0 0 4px;
+}
+
+.tours-slide__details svg {
+  display: block;
+}
+
+.tours-slide__details-title {
+  margin: 0 0 7px;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.tours-slide__details-text {
+  display: block;
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.tours {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.tours__title-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tours__title {
+  position: relative;
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 800;
+}
+.tours__title::after {
+  position: absolute;
+  content: "Ближайшие туры";
+  left: 0;
+  bottom: 0;
+  width: 550px;
+  height: 55px;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 800;
+  opacity: 0.03;
+}
+
+.tours__btn-prev .swiper-button-prev {
+  position: initial;
+}
+
+.tours__slider-wrapper {
+  padding-top: 53px;
+  padding-bottom: 53px;
+}
+
+.tours__slide {
+  width: 380px;
+  height: 416px;
+}
+
+.tours__link {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+}
+
+.tours__link-wrapper {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: inline-flex;
+  gap: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.tours__link-wrapper svg {
+  display: block;
 }
 
 /* @mixin hover-focus {
