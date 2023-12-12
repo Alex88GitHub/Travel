@@ -49,8 +49,8 @@ const breakpointTabletChecker = () => {
 const breakpointMobileChecker = () => {
   if (breakpointMobile.matches) {
     slides.forEach((element, index) => {
-      titleElement[index].style.width = '320px';
-      descriptionElement[index].style.width = '320px';
+      titleElement[index].style.width = '100%';
+      descriptionElement[index].style.width = '100%';
     });
   }
 };

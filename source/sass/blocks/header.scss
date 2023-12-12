@@ -12,18 +12,44 @@
   background-color: $color-navy-blue;
 
   @include vp-1199 {
-    // position: relative;
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     padding: 20px 45px;
+  }
+
+  @include vp-767 {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(2,auto);
+    row-gap: 16px;
+    padding: 15px 15px 13px;
+  }
+}
+
+.header__wrapper .header__phone {
+  @include vp-767 {
+    justify-self: self-end;
+  }
+}
+
+.header__logo {
+  justify-self: center;
+
+  @include vp-767 {
+    justify-self: end;
   }
 }
 
 .header__logo svg {
+  display: block;
+  padding: 10px 31px;
   color: $color-default-white;
 
   @include vp-1199 {
     width: 142px;
     height: 42px;
+    padding: 0;
   }
 }
 
@@ -36,16 +62,40 @@
     padding: 20px 45px 60px;
     background-color: $color-default-white;
   }
+
+  @include vp-767 {
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(3,auto);
+    row-gap: 14px;
+    padding: 15px 15px 40px;
+  }
+}
+
+.header__wrapper-menu-opened .header__navigation-toggle {
+  @include vp-767 {
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+  }
+}
+
+.header__wrapper-menu-opened .header__navigation--opened {
+  @include vp-767 {
+    grid-row: 3 / -1;
+    grid-column: 1 / -1;
+  }
 }
 
 .header__wrapper-menu-opened svg,
 .header__wrapper-menu-opened a {
     @include vp-1199 {
-    color: #2D383F;
+      display: block;
+      color: #2D383F;
   }
 }
 
 .header__phone {
+  justify-self: end;
+  align-self: center;
   font-size: $fz-h6;
   line-height: $lh-h6;
   font-weight: $fw-semi-bold;
@@ -53,7 +103,12 @@
 
   @include vp-1199 {
     font-size: $fz-default;
-    line-height: $lh-small;
+    line-height: $lh-xsmall;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 14px;
   }
 }
 
@@ -69,6 +124,19 @@
       grid-row: 2 / 3;
       overflow: hidden;
     }
+
+    @include vp-767 {
+      margin-top: 26px;
+    }
+  }
+}
+
+.header__navigation-toggle {
+  justify-self: start;
+
+  @include vp-767 {
+    grid-row: 1 / -1;
+    align-self: self-start;
   }
 }
 

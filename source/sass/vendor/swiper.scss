@@ -319,6 +319,11 @@
   display: inline-block;
   border-radius: 50%;
   border: 1px solid #ffffff;
+
+  @media (max-width: 768px) {
+    width: 8px;
+    height: 8px;
+  }
 }
 button.swiper-pagination-bullet {
   border: none;
@@ -361,11 +366,11 @@ button.swiper-pagination-bullet {
 }
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet:not(:last-child),
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet:not(:last-child) {
-  margin-right: var(--swiper-pagination-bullet-horizontal-gap, 15px);
+  margin-right: var(--swiper-pagination-bullet-horizontal-gap, 20px);
 
-  @media (max-width: 768px) {
-    margin-right: 12px;
-  }
+  // @media (max-width: 768px) {
+  //   margin-right: 12px;
+  // }
 }
 .swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
 .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
