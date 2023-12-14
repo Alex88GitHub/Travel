@@ -2,6 +2,10 @@
   padding-top: 20px;
 }
 
+.training__title-wrapper {
+  margin: 0 0 56px;
+}
+
 .training__title-wrapper p {
   margin: 0 0 10px;
 
@@ -19,6 +23,17 @@
   justify-content: space-between;
   min-height: 55px;
   margin-bottom: 20px;
+}
+
+.training__slider {
+  margin: 0 0 56px;
+}
+
+.training__subtitle {
+  margin: 0 0 23px;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: $fw-bold;
 }
 
 .training__slider-btn-wrapper {

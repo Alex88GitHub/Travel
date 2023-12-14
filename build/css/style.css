@@ -3075,7 +3075,7 @@ button,
 .trainers-slide {
   padding: 15px;
   background-color: #ffffff;
-  border: 1px solid #0266c1;
+  border: 1px solid rgba(45, 56, 63, 0.3);
 }
 
 .trainers-slide img {
@@ -3096,15 +3096,16 @@ button,
 }
 
 .trainers-slide__title {
-  margin: 0;
   width: 130px;
+  margin: 0;
   font-size: 14px;
   line-height: 16px;
+  font-weight: 700;
 }
 
 .trainers-slide__link {
   padding: 8px 4px 7px;
-  border: 1px solid #999999;
+  border: 1px solid rgba(45, 56, 63, 0.3);
 }
 
 .trainers-slide__link svg {
@@ -3121,8 +3122,98 @@ button,
   line-height: 16px;
 }
 
+.steps-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 102px;
+  padding: 8px 0;
+  list-style: none;
+}
+
+.steps-item__content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  padding: 0 10px;
+}
+
+.steps-item__content-wrapper svg {
+  display: block;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.steps-item__text {
+  max-width: 198px;
+  margin: 0;
+}
+
+.steps-item__decorate {
+  position: relative;
+  height: 14px;
+}
+.steps-item__decorate::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 10px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #0266c1;
+}
+.steps-item__decorate::after {
+  position: absolute;
+  z-index: 2;
+  content: "";
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: rgba(2, 102, 193, 0.2);
+}
+
+.steps-item:first-child .steps-item__decorate::after {
+  left: 10px;
+}
+
+.steps-list {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.steps-list__item {
+  -ms-flex-preferred-size: 253px;
+      flex-basis: 253px;
+}
+.steps-list__item:last-child {
+  -ms-flex-preferred-size: 440px;
+      flex-basis: 440px;
+}
+
 .training {
   padding-top: 20px;
+}
+
+.training__title-wrapper {
+  margin: 0 0 56px;
 }
 
 .training__title-wrapper p {
@@ -3145,6 +3236,17 @@ button,
           justify-content: space-between;
   min-height: 55px;
   margin-bottom: 20px;
+}
+
+.training__slider {
+  margin: 0 0 56px;
+}
+
+.training__subtitle {
+  margin: 0 0 23px;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
 }
 
 .training__slider-btn-wrapper {
