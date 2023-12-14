@@ -11,7 +11,9 @@ $color-transparent:                 rgba(255, 255, 255, 0);
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
 $color-navy-blue:                   #0266c1;
+$color-resolution-blue:             #1c3374;
 $color-torch-red:                   #ff1553;
+$color-nobel:                       #999999;
 
 
 // Gradient
@@ -27,7 +29,7 @@ $fz-h1-tablet:                      56px;
 $fz-h1-mobile:                      26px;
 $fz-h2-decorate:                    55px;
 $fz-h2:                             35px;
-$fz-h4:                             24px;
+$fz-h3:                             22px;
 $fz-h5:                             21px;
 $fz-h6:                             18px;
 
@@ -41,10 +43,6 @@ $lh-h1-desktop:                     $fz-h1-desktop;
 $lh-h1-tablet:                      $fz-h1-tablet;
 $lh-h1-mobile:                      $fz-h1-mobile;
 $lh-h2:                             $fz-h2;
-
-$lh-h4:                             $fz-h4;
-$lh-h5:                             $fz-h5;
-$lh-h6:                             $fz-h6;
 
 $lh-big:                            24px;
 $lh-default:                        22px;

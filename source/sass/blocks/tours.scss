@@ -1,12 +1,51 @@
 .tours {
+  position: relative;
+  z-index: 1;
   padding-top: 100px;
   padding-bottom: 100px;
+
+  @include vp-1199 {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  @include vp-767 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.tours .container > picture img {
+  position: absolute;
+  z-index: 0;
+  top: -100px;
+  right: 0;
+  width: initial;
+
+  @include vp-1199 {
+    top: -45px;
+  }
+
+  @include vp-767 {
+    top: 90px;
+  }
 }
 
 .tours__title-wrapper {
   position: relative;
   display: flex;
   justify-content: space-between;
+  height: $fz-h2-decorate;
+
+  @include vp-1199 {
+    align-items: end;
+  }
+}
+
+.tours__slider-btn-wrapper {
+  position: relative;
+  display: flex;
+  gap: 4px;
 }
 
 .tours__title {
@@ -27,15 +66,66 @@
     font-weight: $fw-extra-bold;
     opacity: 0.03;
   }
+
+  @include vp-767 {
+    font-size: $fz-h3;
+    line-height: $fz-h3;
+  }
 }
 
-.tours__btn-prev .swiper-button-prev {
+.tours__btn-prev.swiper-button-prev,
+.tours__btn-next.swiper-button-next {
   position: initial;
+  width: 37px;
+  height: 35px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: $color-navy-blue;
+
+  &::after {
+    display: none;
+  }
+
+  &:hover,
+  &:focus-visible {
+    border: 1px solid $color-resolution-blue;
+    background-color: $color-default-white;
+  }
+
+  &:hover svg,
+  &:focus-visible svg {
+    color: $color-resolution-blue;
+  }
+
+  &:active {
+    background-color: $color-resolution-blue;
+  }
+
+  &:active svg{
+    color: $color-default-white;
+  }
+}
+
+.tours__btn-prev.swiper-button-prev svg,
+.tours__btn-next.swiper-button-next svg {
+  color: $color-default-white;
+}
+
+.tours__btn-prev.swiper-button-disabled,
+.tours__btn-next.swiper-button-disabled {
+  background-color: $color-nobel;
+  opacity: initial;
 }
 
 .tours__slider-wrapper {
   padding-top: 53px;
   padding-bottom: 53px;
+
+  @include vp-1199 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 }
 
 .tours__slide {
@@ -49,6 +139,12 @@
   font-weight: $fw-bold;
   letter-spacing: 0.64px;
   text-transform: uppercase;
+
+  @include vp-767 {
+    font-size: calc($fz-small - 1px);
+    line-height: calc($fz-small - 1px);;
+    letter-spacing: 0.56px;
+  }
 }
 
 .tours__link-wrapper {

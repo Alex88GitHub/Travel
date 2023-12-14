@@ -1287,7 +1287,8 @@ img,
 video {
   display: block;
   max-width: 100%;
-  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 textarea {
@@ -2749,6 +2750,7 @@ button,
   z-index: 0;
   top: 0;
   left: 0;
+  width: 100%;
 }
 
 .tours-slide__content-wrapper {
@@ -2886,8 +2888,40 @@ button,
 }
 
 .tours {
+  position: relative;
+  z-index: 1;
   padding-top: 100px;
   padding-bottom: 100px;
+}
+@media (max-width: 1199px) {
+  .tours {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .tours {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.tours .container > picture img {
+  position: absolute;
+  z-index: 0;
+  top: -100px;
+  right: 0;
+  width: initial;
+}
+@media (max-width: 1199px) {
+  .tours .container > picture img {
+    top: -45px;
+  }
+}
+@media (max-width: 767px) {
+  .tours .container > picture img {
+    top: 90px;
+  }
 }
 
 .tours__title-wrapper {
@@ -2898,6 +2932,22 @@ button,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 55px;
+}
+@media (max-width: 1199px) {
+  .tours__title-wrapper {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+}
+
+.tours__slider-btn-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4px;
 }
 
 .tours__title {
@@ -2918,14 +2968,67 @@ button,
   font-weight: 800;
   opacity: 0.03;
 }
+@media (max-width: 767px) {
+  .tours__title {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
 
-.tours__btn-prev .swiper-button-prev {
+.tours__btn-prev.swiper-button-prev,
+.tours__btn-next.swiper-button-next {
   position: initial;
+  width: 37px;
+  height: 35px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #0266c1;
+}
+.tours__btn-prev.swiper-button-prev::after,
+.tours__btn-next.swiper-button-next::after {
+  display: none;
+}
+.tours__btn-prev.swiper-button-prev:hover, .tours__btn-prev.swiper-button-prev:focus-visible,
+.tours__btn-next.swiper-button-next:hover,
+.tours__btn-next.swiper-button-next:focus-visible {
+  border: 1px solid #1c3374;
+  background-color: #ffffff;
+}
+.tours__btn-prev.swiper-button-prev:hover svg, .tours__btn-prev.swiper-button-prev:focus-visible svg,
+.tours__btn-next.swiper-button-next:hover svg,
+.tours__btn-next.swiper-button-next:focus-visible svg {
+  color: #1c3374;
+}
+.tours__btn-prev.swiper-button-prev:active,
+.tours__btn-next.swiper-button-next:active {
+  background-color: #1c3374;
+}
+.tours__btn-prev.swiper-button-prev:active svg,
+.tours__btn-next.swiper-button-next:active svg {
+  color: #ffffff;
+}
+
+.tours__btn-prev.swiper-button-prev svg,
+.tours__btn-next.swiper-button-next svg {
+  color: #ffffff;
+}
+
+.tours__btn-prev.swiper-button-disabled,
+.tours__btn-next.swiper-button-disabled {
+  background-color: #999999;
+  opacity: initial;
 }
 
 .tours__slider-wrapper {
   padding-top: 53px;
   padding-bottom: 53px;
+}
+@media (max-width: 1199px) {
+  .tours__slider-wrapper {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 }
 
 .tours__slide {
@@ -2939,6 +3042,13 @@ button,
   font-weight: 700;
   letter-spacing: 0.64px;
   text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .tours__link {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.56px;
+  }
 }
 
 .tours__link-wrapper {
@@ -2960,6 +3070,134 @@ button,
 
 .tours__link-wrapper svg {
   display: block;
+}
+
+.trainers-slide {
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #0266c1;
+}
+
+.trainers-slide img {
+  margin-bottom: 15px;
+}
+
+.trainers-slide__title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin-bottom: 15px;
+}
+
+.trainers-slide__title {
+  margin: 0;
+  width: 130px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.trainers-slide__link {
+  padding: 8px 4px 7px;
+  border: 1px solid #999999;
+}
+
+.trainers-slide__link svg {
+  display: block;
+}
+
+.trainers-slide__text-content {
+  min-height: 64px;
+}
+
+.trainers-slide__text-content p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.training {
+  padding-top: 20px;
+}
+
+.training__title-wrapper p {
+  margin: 0 0 10px;
+}
+.training__title-wrapper p:last-child {
+  margin: 0;
+}
+
+.training__title {
+  margin-bottom: 37px;
+}
+
+.training__slider-title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 55px;
+  margin-bottom: 20px;
+}
+
+.training__slider-btn-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4px;
+}
+
+.training__btn-prev.swiper-button-prev,
+.training__btn-next.swiper-button-next {
+  position: initial;
+  width: 37px;
+  height: 35px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #0266c1;
+}
+.training__btn-prev.swiper-button-prev::after,
+.training__btn-next.swiper-button-next::after {
+  display: none;
+}
+.training__btn-prev.swiper-button-prev:hover, .training__btn-prev.swiper-button-prev:focus-visible,
+.training__btn-next.swiper-button-next:hover,
+.training__btn-next.swiper-button-next:focus-visible {
+  border: 1px solid #1c3374;
+  background-color: #ffffff;
+}
+.training__btn-prev.swiper-button-prev:hover svg, .training__btn-prev.swiper-button-prev:focus-visible svg,
+.training__btn-next.swiper-button-next:hover svg,
+.training__btn-next.swiper-button-next:focus-visible svg {
+  color: #1c3374;
+}
+.training__btn-prev.swiper-button-prev:active,
+.training__btn-next.swiper-button-next:active {
+  background-color: #1c3374;
+}
+.training__btn-prev.swiper-button-prev:active svg,
+.training__btn-next.swiper-button-next:active svg {
+  color: #ffffff;
+}
+
+.training__btn-prev.swiper-button-prev svg,
+.training__btn-next.swiper-button-next svg {
+  color: #ffffff;
+}
+
+.training__btn-prev.swiper-button-disabled,
+.training__btn-next.swiper-button-disabled {
+  background-color: #999999;
+  opacity: initial;
 }
 
 /* @mixin hover-focus {

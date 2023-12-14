@@ -1,0 +1,73 @@
+.training {
+  padding-top: 20px;
+}
+
+.training__title-wrapper p {
+  margin: 0 0 10px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.training__title {
+  margin-bottom: 37px;
+}
+
+.training__slider-title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  min-height: 55px;
+  margin-bottom: 20px;
+}
+
+.training__slider-btn-wrapper {
+  position: relative;
+  display: flex;
+  gap: 4px;
+}
+
+.training__btn-prev.swiper-button-prev,
+.training__btn-next.swiper-button-next {
+  position: initial;
+  width: 37px;
+  height: 35px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: $color-navy-blue;
+
+  &::after {
+    display: none;
+  }
+
+  &:hover,
+  &:focus-visible {
+    border: 1px solid $color-resolution-blue;
+    background-color: $color-default-white;
+  }
+
+  &:hover svg,
+  &:focus-visible svg {
+    color: $color-resolution-blue;
+  }
+
+  &:active {
+    background-color: $color-resolution-blue;
+  }
+
+  &:active svg{
+    color: $color-default-white;
+  }
+}
+
+.training__btn-prev.swiper-button-prev svg,
+.training__btn-next.swiper-button-next svg {
+  color: $color-default-white;
+}
+
+.training__btn-prev.swiper-button-disabled,
+.training__btn-next.swiper-button-disabled {
+background-color: $color-nobel;
+opacity: initial;
+}
