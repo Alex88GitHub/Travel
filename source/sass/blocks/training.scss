@@ -1,5 +1,15 @@
 .training {
   padding-top: 20px;
+
+  @include vp-1199 {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  @include vp-767 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 
 .training__title-wrapper {
@@ -7,7 +17,18 @@
 }
 
 .training__title-wrapper p {
+  position: relative;
+  z-index: 1;
+  width: 820px;
   margin: 0 0 10px;
+
+  @include vp-1199 {
+    width: 545px;
+  }
+
+  @include vp-1199 {
+    width: 320px;
+  }
 
   &:last-child {
     margin: 0;
@@ -16,17 +37,41 @@
 
 .training__title {
   margin-bottom: 37px;
+  font-size: $fz-h2;
+  line-height: $fz-h2;
+  font-weight: $fw-extra-bold;
+
+  @include vp-1199 {
+    font-size: $fz-h2-tablet;
+    line-height: $fz-h2-tablet;
+  }
 }
 
 .training__slider-title-wrapper {
   display: flex;
   justify-content: space-between;
   min-height: 55px;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
+
+  @include vp-1199 {
+    margin: 0 0 30px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 25px;
+  }
 }
 
 .training__slider {
   margin: 0 0 56px;
+
+  @include vp-1199 {
+    margin: 0 0 25px;
+  }
+}
+
+.training__slider-wrapper.swiper-wrapper {
+  align-items: stretch;
 }
 
 .training__subtitle {
@@ -34,6 +79,16 @@
   font-size: 21px;
   line-height: 21px;
   font-weight: $fw-bold;
+
+  @include vp-1199 {
+    margin: 0 0 44px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 25px;
+    font-size: $fz-default;
+    line-height: $fz-default;
+  }
 }
 
 .training__slider-btn-wrapper {
@@ -85,4 +140,24 @@
 .training__btn-next.swiper-button-disabled {
 background-color: $color-nobel;
 opacity: initial;
+}
+
+.training__steps-list {
+  position: relative;
+  z-index: 2;
+  display: flex;
+
+  @include vp-1199 {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    padding: 0 5px 0 10px;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 0;
+  }
 }

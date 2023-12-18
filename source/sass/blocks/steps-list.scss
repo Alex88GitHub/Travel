@@ -1,17 +1,26 @@
 .steps-list {
-  position: relative;
-  z-index: 2;
-  display: flex;
   margin: 0;
   padding: 0;
 }
 
 .steps-list__item {
   flex-basis: 253px;
-  // flex-grow: 1;
 
   &:last-child {
     flex-basis: 440px;
-    // flex-grow: 2;
+
+    @include vp-1199 {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+
+    @include vp-767 {
+      flex-basis: initial;
+    }
+  }
+
+  @include vp-767 {
+    flex-basis: initial;
+    justify-content: start;
   }
 }

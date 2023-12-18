@@ -3078,7 +3078,12 @@ button,
   border: 1px solid rgba(45, 56, 63, 0.3);
 }
 
+.trainers-slide.swiper-slide {
+  height: initial;
+}
+
 .trainers-slide img {
+  width: 100%;
   margin-bottom: 15px;
 }
 
@@ -3092,7 +3097,7 @@ button,
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  margin-bottom: 15px;
+  margin: 0 0 15px;
 }
 
 .trainers-slide__title {
@@ -3137,6 +3142,45 @@ button,
   padding: 8px 0;
   list-style: none;
 }
+@media (max-width: 1199px) {
+  .steps-item:last-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+@media (max-width: 767px) {
+  .steps-item:last-child {
+    min-height: initial;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+@media (max-width: 1199px) {
+  .steps-item {
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+    padding: 0;
+  }
+}
+@media (max-width: 767px) {
+  .steps-item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 29px;
+    min-height: initial;
+  }
+}
 
 .steps-item__content-wrapper {
   display: -webkit-box;
@@ -3144,6 +3188,18 @@ button,
   display: flex;
   gap: 10px;
   padding: 0 10px;
+}
+@media (max-width: 1199px) {
+  .steps-item__content-wrapper {
+    padding: 0;
+  }
+}
+@media (max-width: 767px) {
+  .steps-item__content-wrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .steps-item__content-wrapper svg {
@@ -3153,8 +3209,22 @@ button,
 }
 
 .steps-item__text {
-  max-width: 198px;
+  width: 198px;
   margin: 0;
+}
+@media (max-width: 1199px) {
+  .steps-item__text {
+    width: 225px;
+    margin: 0 0 8px;
+  }
+}
+@media (max-width: 767px) {
+  .steps-item__text {
+    width: 200px;
+    margin: 0;
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 
 .steps-item__decorate {
@@ -3170,6 +3240,11 @@ button,
   height: 14px;
   border-radius: 50%;
   background-color: #0266c1;
+}
+@media (max-width: 1199px) {
+  .steps-item__decorate::before {
+    left: 0;
+  }
 }
 .steps-item__decorate::after {
   position: absolute;
@@ -3189,12 +3264,23 @@ button,
   left: 10px;
 }
 
+@media (max-width: 1199px) {
+  .steps-item:last-child .steps-item__decorate {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 1199px) and (max-width: 1199px) {
+  .steps-item:last-child .steps-item__decorate::after {
+    left: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .steps-item:last-child .steps-item__decorate {
+    margin: 0;
+  }
+}
+
 .steps-list {
-  position: relative;
-  z-index: 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: 0;
   padding: 0;
 }
@@ -3207,9 +3293,46 @@ button,
   -ms-flex-preferred-size: 440px;
       flex-basis: 440px;
 }
+@media (max-width: 1199px) {
+  .steps-list__item:last-child {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+}
+@media (max-width: 767px) {
+  .steps-list__item:last-child {
+    -ms-flex-preferred-size: initial;
+        flex-basis: initial;
+  }
+}
+@media (max-width: 767px) {
+  .steps-list__item {
+    -ms-flex-preferred-size: initial;
+        flex-basis: initial;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
 
 .training {
   padding-top: 20px;
+}
+@media (max-width: 1199px) {
+  .training {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .training {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 
 .training__title-wrapper {
@@ -3217,7 +3340,20 @@ button,
 }
 
 .training__title-wrapper p {
+  position: relative;
+  z-index: 1;
+  width: 820px;
   margin: 0 0 10px;
+}
+@media (max-width: 1199px) {
+  .training__title-wrapper p {
+    width: 545px;
+  }
+}
+@media (max-width: 1199px) {
+  .training__title-wrapper p {
+    width: 320px;
+  }
 }
 .training__title-wrapper p:last-child {
   margin: 0;
@@ -3225,6 +3361,15 @@ button,
 
 .training__title {
   margin-bottom: 37px;
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 800;
+}
+@media (max-width: 1199px) {
+  .training__title {
+    font-size: 25px;
+    line-height: 25px;
+  }
 }
 
 .training__slider-title-wrapper {
@@ -3235,11 +3380,32 @@ button,
       -ms-flex-pack: justify;
           justify-content: space-between;
   min-height: 55px;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
+}
+@media (max-width: 1199px) {
+  .training__slider-title-wrapper {
+    margin: 0 0 30px;
+  }
+}
+@media (max-width: 767px) {
+  .training__slider-title-wrapper {
+    margin: 0 0 25px;
+  }
 }
 
 .training__slider {
   margin: 0 0 56px;
+}
+@media (max-width: 1199px) {
+  .training__slider {
+    margin: 0 0 25px;
+  }
+}
+
+.training__slider-wrapper.swiper-wrapper {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .training__subtitle {
@@ -3247,6 +3413,18 @@ button,
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
+}
+@media (max-width: 1199px) {
+  .training__subtitle {
+    margin: 0 0 44px;
+  }
+}
+@media (max-width: 767px) {
+  .training__subtitle {
+    margin: 0 0 25px;
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
 .training__slider-btn-wrapper {
@@ -3300,6 +3478,38 @@ button,
 .training__btn-next.swiper-button-disabled {
   background-color: #999999;
   opacity: initial;
+}
+
+.training__steps-list {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 1199px) {
+  .training__steps-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[2];
+    grid-template-columns: repeat(2, auto);
+    -ms-grid-rows: (auto)[2];
+    grid-template-rows: repeat(2, auto);
+    padding: 0 5px 0 10px;
+  }
+}
+@media (max-width: 767px) {
+  .training__steps-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 25px;
+    padding: 0;
+  }
 }
 
 /* @mixin hover-focus {

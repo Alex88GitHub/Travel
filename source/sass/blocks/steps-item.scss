@@ -5,12 +5,44 @@
   min-height: 102px;
   padding: 8px 0;
   list-style: none;
+
+  &:last-child {
+    @include vp-1199 {
+      flex-direction: column-reverse;
+    }
+
+    @include vp-767 {
+      min-height: initial;
+      flex-direction: row-reverse;
+    }
+  }
+
+  @include vp-1199 {
+    justify-content: initial;
+    padding: 0;
+  }
+
+  @include vp-767 {
+    flex-direction: row;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 29px;
+    min-height: initial;
+  }
 }
 
 .steps-item__content-wrapper {
   display: flex;
   gap: 10px;
   padding: 0 10px;
+
+  @include vp-1199 {
+    padding: 0;
+  }
+
+  @include vp-767 {
+    align-items: center;
+  }
 }
 
 .steps-item__content-wrapper svg {
@@ -19,8 +51,20 @@
 }
 
 .steps-item__text {
-  max-width: 198px;
+  width: 198px;
   margin: 0;
+
+  @include vp-1199 {
+    width: 225px;
+    margin: 0 0 8px;
+  }
+
+  @include vp-767 {
+    width: 200px;
+    margin: 0;
+    font-size: $fz-xsmall;
+    line-height: 18px;
+  }
 }
 
 .steps-item__decorate {
@@ -36,6 +80,10 @@
     height: 14px;
     border-radius: 50%;
     background-color: $color-navy-blue;
+
+    @include vp-1199 {
+      left: 0;
+    }
   }
 
   &::after {
@@ -54,5 +102,21 @@
 .steps-item:first-child .steps-item__decorate {
   &::after {
     left: 10px;
+  }
+}
+
+.steps-item:last-child .steps-item__decorate {
+  @include vp-1199 {
+    margin-bottom: 15px;
+
+    &::after {
+      @include vp-1199 {
+        left: 10px;
+      }
+    }
+  }
+
+  @include vp-767 {
+    margin: 0;
   }
 }
