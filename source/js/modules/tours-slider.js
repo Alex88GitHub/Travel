@@ -5,6 +5,7 @@ export const toursSlider = () => {
 
   return new window.Swiper(slider, {
     loop: false,
+    initialSlide: 1,
     navigation: {
       prevEl: buttonPrev,
       nextEl: buttonNext,

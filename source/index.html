@@ -295,10 +295,11 @@
       <div class="container">
         <picture>
           <source media="(max-width: 767px)"
-            srcset="img/background-clouds-mobile.png 1x, img/background-clouds-mobile@2x.png 2x" width="171"
+            srcset="img/background-big-clouds-mobile.png 1x, img/background-big-clouds-mobile@2x.png 2x" width="171"
             height="595">
           <source media="(max-width: 1199px)"
-            srcset="img/background-big-clouds-tablet.png 1x, img/background-big-clouds-tablet@2x.png 2x" width="602" height="1364">
+            srcset="img/background-big-clouds-tablet.png 1x, img/background-big-clouds-tablet@2x.png 2x" width="602"
+            height="1364">
           <img src="img/background-big-clouds-desktop.png" width="602" height="1630"
             srcset="img/background-big-clouds-desktop@2x.png 2x">
         </picture>
@@ -321,6 +322,50 @@
         </div>
         <div class="tours__slider swiper" data-slider="tours-slider">
           <div class="tours__slider-wrapper swiper-wrapper swiper-no-swiping">
+            <div class="tours__slide swiper-slide tours-slide">
+              <img src="img/tours-image-2.jpg" srcset="img/tours-image-2@2x.jpg 2x" width="380" height="416">
+              <div class="tours-slide__content-wrapper">
+                <div class="tours-slide__info">
+                  <div class="tours-slide__place">
+                    <svg width="16" height="16">
+                      <use href="img/sprite.svg#tours-geolocation-icon"></use>
+                    </svg>
+                    <span class="tours-slide__place-text">Алтай</span>
+                  </div>
+                  <div class="tours-slide__duration">
+                    <div class="tours-slide__days">
+                      <svg width="20" height="20">
+                        <use href="img/sprite.svg#sun-icon"></use>
+                      </svg>
+                      <span class="tours-slide__duration-text">14 дней</span>
+                    </div>
+                    <div class="tours-slide__nights">
+                      <svg width="20" height="20">
+                        <use href="img/sprite.svg#moon-icon"></use>
+                      </svg>
+                      <span class="tours-slide__duration-text">13 ночей</span>
+                    </div>
+                  </div>
+                </div>
+                <h3 class="tours-slide__title">Путь к подножию Белухи</h3>
+                <div class="tours-slide__details">
+                  <div class="tours-slide__difficulty">
+                    <p class="tours-slide__details-title">Сложность:</p>
+                    <svg width="84" height="16">
+                      <use href="img/sprite.svg#stars-3-icon"></use>
+                    </svg>
+                  </div>
+                  <div class="tours-slide__date">
+                    <p class="tours-slide__details-title">Даты набора:</p>
+                    <span class="tours-slide__details-text">14.06–23.06</span>
+                  </div>
+                  <div class="tours-slide__group">
+                    <p class="tours-slide__details-title">Группа:</p>
+                    <span class="tours-slide__details-text">до 25 чел.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="tours__slide swiper-slide tours-slide">
               <img src="img/tours-image-1.jpg" srcset="img/tours-image-1@2x.jpg 2x" width="380" height="416">
               <div class="tours-slide__content-wrapper">
@@ -453,94 +498,6 @@
                 </div>
               </div>
             </div>
-            <div class="tours__slide swiper-slide tours-slide">
-              <img src="img/tours-image-2.jpg" srcset="img/tours-image-2@2x.jpg 2x" width="380" height="416">
-              <div class="tours-slide__content-wrapper">
-                <div class="tours-slide__info">
-                  <div class="tours-slide__place">
-                    <svg width="16" height="16">
-                      <use href="img/sprite.svg#tours-geolocation-icon"></use>
-                    </svg>
-                    <span class="tours-slide__place-text">Алтай</span>
-                  </div>
-                  <div class="tours-slide__duration">
-                    <div class="tours-slide__days">
-                      <svg width="20" height="20">
-                        <use href="img/sprite.svg#sun-icon"></use>
-                      </svg>
-                      <span class="tours-slide__duration-text">14 дней</span>
-                    </div>
-                    <div class="tours-slide__nights">
-                      <svg width="20" height="20">
-                        <use href="img/sprite.svg#moon-icon"></use>
-                      </svg>
-                      <span class="tours-slide__duration-text">13 ночей</span>
-                    </div>
-                  </div>
-                </div>
-                <h3 class="tours-slide__title">Путь к подножию Белухи</h3>
-                <div class="tours-slide__details">
-                  <div class="tours-slide__difficulty">
-                    <p class="tours-slide__details-title">Сложность:</p>
-                    <svg width="84" height="16">
-                      <use href="img/sprite.svg#stars-3-icon"></use>
-                    </svg>
-                  </div>
-                  <div class="tours-slide__date">
-                    <p class="tours-slide__details-title">Даты набора:</p>
-                    <span class="tours-slide__details-text">14.06–23.06</span>
-                  </div>
-                  <div class="tours-slide__group">
-                    <p class="tours-slide__details-title">Группа:</p>
-                    <span class="tours-slide__details-text">до 25 чел.</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tours__slide swiper-slide tours-slide">
-              <img src="img/tours-image-1.jpg" srcset="img/tours-image-1@2x.jpg 2x" width="380" height="416">
-              <div class="tours-slide__content-wrapper">
-                <div class="tours-slide__info">
-                  <div class="tours-slide__place">
-                    <svg width="16" height="16">
-                      <use href="img/sprite.svg#tours-geolocation-icon"></use>
-                    </svg>
-                    <span class="tours-slide__place-text">Кавказ</span>
-                  </div>
-                  <div class="tours-slide__duration">
-                    <div class="tours-slide__days">
-                      <svg width="20" height="20">
-                        <use href="img/sprite.svg#sun-icon"></use>
-                      </svg>
-                      <span class="tours-slide__duration-text">4 дня</span>
-                    </div>
-                    <div class="tours-slide__nights">
-                      <svg width="20" height="20">
-                        <use href="img/sprite.svg#moon-icon"></use>
-                      </svg>
-                      <span class="tours-slide__duration-text">3 ночи</span>
-                    </div>
-                  </div>
-                </div>
-                <h3 class="tours-slide__title">Путешествие вокруг Эльбруса</h3>
-                <div class="tours-slide__details">
-                  <div class="tours-slide__difficulty">
-                    <p class="tours-slide__details-title">Сложность:</p>
-                    <svg width="84" height="16">
-                      <use href="img/sprite.svg#stars-4-icon"></use>
-                    </svg>
-                  </div>
-                  <div class="tours-slide__date">
-                    <p class="tours-slide__details-title">Даты набора:</p>
-                    <span class="tours-slide__details-text">12.06–19.06</span>
-                  </div>
-                  <div class="tours-slide__group">
-                    <p class="tours-slide__details-title">Группа:</p>
-                    <span class="tours-slide__details-text">до 15 чел.</span>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
         <div class="tours__link-wrapper">
@@ -655,41 +612,31 @@
         <div class="training__process">
           <h3 class="training__subtitle">Процесс обучения</h3>
           <ul class="training__steps-list steps-list">
-            <li class="steps-list__item steps-item">
-              <div class="steps-item__content-wrapper">
-                <svg width="25" height="25">
-                  <use href="img/sprite.svg#map-steps-icon"></use>
-                </svg>
-                <p class="steps-item__text">Изучение спортивного туристского движения</p>
-              </div>
-              <div class="steps-item__decorate"></div>
+            <li class="steps-list__item steps-item steps-item--dot-down steps-item--line-down steps-item--dot-left">
+              <svg width="25" height="25">
+                <use href="img/sprite.svg#map-steps-icon"></use>
+              </svg>
+              <p class="steps-item__text">Изучение спортивного туристского движения</p>
             </li>
-            <li class="steps-list__item steps-item">
-              <div class="steps-item__content-wrapper">
-                <svg width="25" height="25">
-                  <use href="img/sprite.svg#boots-steps-icon"></use>
-                </svg>
-                <p class="steps-item__text">Подготовка и техническое снаряжение в походах</p>
-              </div>
-              <div class="steps-item__decorate"></div>
+            <li class="steps-list__item steps-item steps-item--dot-down steps-item--line-down steps-item--line-up-down steps-item--dot-left">
+              <svg width="25" height="25">
+                <use href="img/sprite.svg#boots-steps-icon"></use>
+              </svg>
+              <p class="steps-item__text">Подготовка и техническое снаряжение в походах</p>
             </li>
-            <li class="steps-list__item steps-item">
-              <div class="steps-item__content-wrapper">
-                <svg width="25" height="25">
-                  <use href="img/sprite.svg#trees-steps-icon"></use>
-                </svg>
-                <p class="steps-item__text">Лекции по окружающей среде, экологии и гигиене</p>
-              </div>
-              <div class="steps-item__decorate"></div>
+            <li
+              class="steps-list__item steps-item steps-item--dot-down steps-item--line-down steps-item--dot-up steps-item--line-down-up steps-item--dot-left">
+              <svg width="25" height="25">
+                <use href="img/sprite.svg#trees-steps-icon"></use>
+              </svg>
+              <p class="steps-item__text">Лекции по окружающей среде, экологии и гигиене</p>
             </li>
-            <li class="steps-list__item steps-item">
-              <div class="steps-item__content-wrapper">
-                <svg width="25" height="25">
-                  <use href="img/sprite.svg#mountains-steps-icon"></use>
-                </svg>
-                <p class="steps-item__text">Разъяснение сложности горных препятствий</p>
-              </div>
-              <div class="steps-item__decorate"></div>
+            <li
+              class="steps-list__item steps-item steps-item--dot-down steps-item--line-down steps-item--dot-up steps-item--line-upper steps-item--dot-left">
+              <svg width="25" height="25">
+                <use href="img/sprite.svg#mountains-steps-icon"></use>
+              </svg>
+              <p class="steps-item__text">Разъяснение сложности горных препятствий</p>
             </li>
           </ul>
         </div>
