@@ -11,16 +11,19 @@ export const trainersSlider = () => {
     },
     breakpoints: {
       350: {
+        initialSlide: 3,
         slidesPerView: 1,
         spaceBetween: 0,
         noSwiping: false,
       },
       768: {
+        initialSlide: 1,
         slidesPerView: 3,
         spaceBetween: 20,
         noSwiping: false,
       },
       1200: {
+        initialSlide: 1,
         slidesPerView: 4,
         spaceBetween: 20,
         noSwiping: true,

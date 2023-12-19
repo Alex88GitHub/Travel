@@ -68,8 +68,8 @@
   }
 
   @include vp-767 {
-    font-size: $fz-h3;
-    line-height: $fz-h3;
+    font-size: calc($fz-h3 + 1px);
+    line-height: calc($fz-h3 + 1px);
   }
 }
 
