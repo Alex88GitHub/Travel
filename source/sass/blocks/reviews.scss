@@ -2,6 +2,70 @@
 
 }
 
+.reviews__title {
+  position: relative;
+  margin: 0 0 31px;
+  font-size: $fz-h2;
+  line-height: $fz-h2;
+  font-weight: $fw-extra-bold;
+
+
+  &::after {
+    position: absolute;
+    content: "Отзывы";
+    left: 0;
+    bottom: 0;
+    height: $fz-h2-decorate;
+    width: 100%;
+    font-size: $fz-h2-decorate;
+    line-height: $fz-h2-decorate;
+    opacity: 0.03;
+  }
+}
+
+.reviews__slider-wrapper {
+  padding: 10px;
+}
+
+.reviews__slide {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  column-gap: 30px;
+  row-gap: 12px;
+  padding: 20px 40px 20px 20px;
+}
+
+.reviews__slide img {
+  grid-row: 1 / 3;
+}
+
 .reviews__title-wrapper {
   margin: 0 0 30px;
+}
+
+.reviews__text-content p {
+  margin: 0 0 10px;
+  font-size: $fz-small-tablet;
+  line-height: $lh-default;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+
+
+.reviews__name {
+  margin: 0 0 8px;
+  font-size: calc($fz-xsmall + 1px);
+  line-height: calc($fz-xsmall + 1px);
+  font-weight: $fw-bold;
+}
+
+.reviews__age {
+  display: block;
+  font-size: $fz-xsmall;
+  line-height: $fz-xsmall;
+  font-weight: $fw-light;
 }

@@ -3808,8 +3808,80 @@ button,
   }
 }
 
+.reviews-slide {
+  width: 700px;
+  -webkit-box-shadow: 0 0 20px 0 rgba(2, 102, 193, 0.1);
+          box-shadow: 0 0 20px 0 rgba(2, 102, 193, 0.1);
+}
+
+.reviews__title {
+  position: relative;
+  margin: 0 0 31px;
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 800;
+}
+.reviews__title::after {
+  position: absolute;
+  content: "Отзывы";
+  left: 0;
+  bottom: 0;
+  height: 55px;
+  width: 100%;
+  font-size: 55px;
+  line-height: 55px;
+  opacity: 0.03;
+}
+
+.reviews__slider-wrapper {
+  padding: 10px;
+}
+
+.reviews__slide {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+  grid-template-columns: repeat(2, auto);
+  -ms-grid-rows: (auto)[2];
+  grid-template-rows: repeat(2, auto);
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 12px;
+  padding: 20px 40px 20px 20px;
+}
+
+.reviews__slide img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
 .reviews__title-wrapper {
   margin: 0 0 30px;
+}
+
+.reviews__text-content p {
+  margin: 0 0 10px;
+  font-size: 14px;
+  line-height: 22px;
+}
+.reviews__text-content p:last-child {
+  margin: 0;
+}
+
+.reviews__name {
+  margin: 0 0 8px;
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 700;
+}
+
+.reviews__age {
+  display: block;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 300;
 }
 
 /* @mixin hover-focus {
