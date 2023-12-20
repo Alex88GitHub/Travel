@@ -3090,6 +3090,7 @@ button,
 }
 
 .trainers-slide img {
+  width: 100%;
   margin-bottom: 15px;
 }
 @media (max-width: 1199px) {
@@ -3174,7 +3175,7 @@ button,
 @media (max-width: 767px) {
   .steps-item {
     min-height: initial;
-    padding: 0 0 0 67px;
+    padding: 0 0 0 64px;
   }
 }
 @media (max-width: 1199px) {
@@ -3191,7 +3192,6 @@ button,
 }
 @media (max-width: 1199px) {
   .steps-item:last-child {
-    padding: 0 0 0 35px;
     -ms-grid-column-align: start;
         justify-self: start;
   }
@@ -3316,16 +3316,9 @@ button,
   .steps-item svg {
     top: 6px;
     left: 29px;
+    width: 21px;
+    height: 20px;
   }
-}
-
-.steps-item:first-child svg {
-  top: 3px;
-  left: 0;
-}
-
-.steps-item:last-child svg {
-  left: 0;
 }
 
 .steps-item__text {
@@ -3360,7 +3353,7 @@ button,
 }
 @media (max-width: 767px) {
   .steps-list {
-    width: 79%;
+    width: 86%;
   }
 }
 @media (max-width: 767px) {
@@ -3415,13 +3408,13 @@ button,
 @media (max-width: 1199px) {
   .training {
     padding-top: 63px;
-    padding-bottom: 45px;
+    padding-bottom: 38px;
   }
 }
 @media (max-width: 767px) {
   .training {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 27px;
+    padding-bottom: 16px;
   }
 }
 
@@ -3431,6 +3424,11 @@ button,
 @media (max-width: 1199px) {
   .training__title-wrapper {
     margin: 0 0 29px;
+  }
+}
+@media (max-width: 767px) {
+  .training__title-wrapper {
+    margin: 0 0 28px;
   }
 }
 
@@ -3448,6 +3446,8 @@ button,
 @media (max-width: 767px) {
   .training__title-wrapper p {
     width: 320px;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 .training__title-wrapper p:last-child {
@@ -3482,11 +3482,25 @@ button,
     line-height: 40px;
   }
 }
+@media (max-width: 767px) {
+  .training__title::after {
+    height: 26px;
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
 @media (max-width: 1199px) {
   .training__title {
     margin-bottom: 21px;
     font-size: 25px;
     line-height: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .training__title {
+    margin-bottom: 16px;
+    font-size: 22px;
+    line-height: 22px;
   }
 }
 
@@ -3520,6 +3534,11 @@ button,
     margin: 0 0 27px;
   }
 }
+@media (max-width: 767px) {
+  .training__slider {
+    margin: 0 0 26px;
+  }
+}
 
 .training__slider-wrapper.swiper-wrapper {
   -webkit-box-align: stretch;
@@ -3544,7 +3563,7 @@ button,
 }
 @media (max-width: 767px) {
   .training__subtitle {
-    margin: 0 0 25px;
+    margin: 0 0 22px;
     font-size: 16px;
     line-height: 16px;
   }

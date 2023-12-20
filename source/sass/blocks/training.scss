@@ -3,12 +3,12 @@
 
   @include vp-1199 {
     padding-top: 63px;
-    padding-bottom: 45px;
+    padding-bottom: 38px;
   }
 
   @include vp-767 {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 27px;
+    padding-bottom: 16px;
   }
 }
 
@@ -17,6 +17,10 @@
 
   @include vp-1199 {
     margin: 0 0 29px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 28px;
   }
 }
 
@@ -32,6 +36,8 @@
 
   @include vp-767 {
     width: 320px;
+    font-size: $fz-small-tablet;
+    line-height: $lh-small;
   }
 
   &:last-child {
@@ -65,12 +71,24 @@
       font-size: calc($fz-h2-decorate - 15px);
       line-height: calc($fz-h2-decorate - 15px);
     }
+
+    @include vp-767 {
+      height: $fz-h1-mobile;
+      font-size: $fz-h1-mobile;
+      line-height: $fz-h1-mobile;
+    }
   }
 
   @include vp-1199 {
     margin-bottom: 21px;
     font-size: $fz-h2-tablet;
     line-height: $fz-h2-tablet;
+  }
+
+  @include vp-767 {
+    margin-bottom: 16px;
+    font-size: $fz-h2-mobile;
+    line-height: $fz-h2-mobile;
   }
 }
 
@@ -96,6 +114,10 @@
   @include vp-1199 {
     margin: 0 0 27px;
   }
+
+  @include vp-767 {
+    margin: 0 0 26px;
+  }
 }
 
 .training__slider-wrapper.swiper-wrapper {
@@ -117,7 +139,7 @@
   }
 
   @include vp-767 {
-    margin: 0 0 25px;
+    margin: 0 0 22px;
     font-size: $fz-default;
     line-height: $fz-default;
   }
