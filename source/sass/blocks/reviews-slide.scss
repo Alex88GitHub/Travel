@@ -1,4 +1,12 @@
-.reviews-slide {
+.reviews-slide.swiper-slide {
   width: 700px;
   box-shadow: 0 0 20px 0 rgba($color: $color-navy-blue, $alpha: 0.1);
+
+  @include vp-1199 {
+    width: 565px;
+  }
+
+  // @include vp-767 {
+  //   width: 320px;
+  // }
 }
