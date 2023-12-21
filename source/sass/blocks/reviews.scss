@@ -2,7 +2,7 @@
   padding: 50px 0 0;
 
   @include vp-1199 {
-    padding: 45px 0 0;
+    padding: 45px 0 37px;
   }
 
   @include vp-767 {
@@ -69,6 +69,7 @@ opacity: initial;
 
   @include vp-1199 {
     align-self: flex-end;
+    margin-left: 1px;
     font-size: $fz-h2-tablet;
     line-height: $fz-h2-tablet;
   }
@@ -124,14 +125,12 @@ opacity: initial;
 
   @include vp-1199 {
     grid-template-columns: 186px auto;
-    row-gap: 25px;
+    row-gap: 31px;
     padding: 20px 30px 20px 20px;
   }
 
   @include vp-767 {
     display: block;
-    // grid-template-columns: auto;
-    // grid-template-rows: 169px auto auto;
     padding: 20px;
   }
 }
@@ -160,6 +159,10 @@ opacity: initial;
 }
 
 .reviews__text-content {
+  @include vp-1199 {
+    margin-top: 4px;
+  }
+
   @include vp-767 {
     margin: 0 0 15px;
   }
@@ -187,6 +190,10 @@ opacity: initial;
   font-size: calc($fz-xsmall + 1px);
   line-height: calc($fz-xsmall + 1px);
   font-weight: $fw-bold;
+
+  @include vp-1199 {
+    margin: 0 0 6px;
+  }
 }
 
 .reviews__age {

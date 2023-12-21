@@ -3824,7 +3824,7 @@ button,
 }
 @media (max-width: 1199px) {
   .reviews {
-    padding: 45px 0 0;
+    padding: 45px 0 37px;
   }
 }
 @media (max-width: 767px) {
@@ -3896,6 +3896,7 @@ button,
   .reviews__title {
     -ms-flex-item-align: end;
         align-self: flex-end;
+    margin-left: 1px;
     font-size: 25px;
     line-height: 25px;
   }
@@ -3963,7 +3964,7 @@ button,
   .reviews__slide {
     -ms-grid-columns: 186px auto;
     grid-template-columns: 186px auto;
-    row-gap: 25px;
+    row-gap: 31px;
     padding: 20px 30px 20px 20px;
   }
 }
@@ -4006,6 +4007,11 @@ button,
   }
 }
 
+@media (max-width: 1199px) {
+  .reviews__text-content {
+    margin-top: 4px;
+  }
+}
 @media (max-width: 767px) {
   .reviews__text-content {
     margin: 0 0 15px;
@@ -4033,12 +4039,166 @@ button,
   line-height: 13px;
   font-weight: 700;
 }
+@media (max-width: 1199px) {
+  .reviews__name {
+    margin: 0 0 6px;
+  }
+}
 
 .reviews__age {
   display: block;
   font-size: 12px;
   line-height: 12px;
   font-weight: 300;
+}
+
+.advantages-slide {
+  padding: 40px 20px;
+  border: 1px solid rgba(45, 56, 63, 0.1);
+}
+
+.advantages-slide.swiper-slide {
+  height: initial;
+  width: 380px;
+}
+
+.advantages-slide svg {
+  display: block;
+  margin: 0 auto 30px;
+  padding: 16px;
+  border: 1px solid #0266c1;
+}
+
+.advantages-slide__text-content h3 {
+  margin: 0 0 15px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.advantages-slide__text-content p {
+  margin: 0 0 10px;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+}
+.advantages-slide__text-content p:last-child {
+  margin: 0;
+}
+
+.advantages {
+  padding-top: 42px;
+  padding-bottom: 81px;
+}
+
+.advantages__slider.swiper {
+  overflow: initial;
+}
+
+.advantages__title {
+  position: relative;
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 800;
+  text-align: center;
+}
+@media (max-width: 1199px) {
+  .advantages__title {
+    font-size: 25px;
+    line-height: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .advantages__title {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+.advantages__title::after {
+  position: absolute;
+  content: "Преимущества";
+  left: 0;
+  bottom: 0;
+  height: 55px;
+  width: 100%;
+  font-size: 55px;
+  line-height: 55px;
+  opacity: 0.03;
+}
+@media (max-width: 1199px) {
+  .advantages__title::after {
+    height: 40px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .advantages__title::after {
+    height: 26px;
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.advantages__slider-wrapper {
+  padding: 50px 0;
+}
+
+.advantages__slider-btn-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 4px;
+}
+
+.advantages__btn-prev.swiper-button-prev,
+.advantages__btn-next.swiper-button-next {
+  position: initial;
+  width: 37px;
+  height: 35px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #0266c1;
+}
+.advantages__btn-prev.swiper-button-prev::after,
+.advantages__btn-next.swiper-button-next::after {
+  display: none;
+}
+.advantages__btn-prev.swiper-button-prev:hover, .advantages__btn-prev.swiper-button-prev:focus-visible,
+.advantages__btn-next.swiper-button-next:hover,
+.advantages__btn-next.swiper-button-next:focus-visible {
+  border: 1px solid #1c3374;
+  background-color: #ffffff;
+}
+.advantages__btn-prev.swiper-button-prev:hover svg, .advantages__btn-prev.swiper-button-prev:focus-visible svg,
+.advantages__btn-next.swiper-button-next:hover svg,
+.advantages__btn-next.swiper-button-next:focus-visible svg {
+  color: #1c3374;
+}
+.advantages__btn-prev.swiper-button-prev:active,
+.advantages__btn-next.swiper-button-next:active {
+  background-color: #1c3374;
+}
+.advantages__btn-prev.swiper-button-prev:active svg,
+.advantages__btn-next.swiper-button-next:active svg {
+  color: #ffffff;
+}
+
+.advantages__btn-prev.swiper-button-prev svg,
+.advantages__btn-next.swiper-button-next svg {
+  color: #ffffff;
+}
+
+.advantages__btn-prev.swiper-button-disabled,
+.advantages__btn-next.swiper-button-disabled {
+  background-color: #999999;
+  opacity: initial;
 }
 
 /* @mixin hover-focus {
