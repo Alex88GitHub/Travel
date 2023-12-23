@@ -1,0 +1,44 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 32px 120px;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer__link {
+  padding: 10px 0;
+  line-height: $fz-default;
+}
+
+.footer__phone {
+  padding: 10px 0;
+  font-size: $fz-h6;
+  line-height: $fz-h6;
+  font-weight: $fw-semi-bold;
+}
+
+.footer__social-list {
+  display: flex;
+  align-self: center;
+  gap: 15px;
+}
+
+.footer__policy {
+  align-self: center;
+  font-size: $fz-xsmall;
+  line-height: $fz-xsmall;
+  font-weight: $fw-light;
+}
