@@ -1,0 +1,23 @@
+.contacts {
+
+}
+
+.contacts__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  row-gap: 50px;
+}
+
+.contacts__wrapper picture {
+  grid-column: 2 / 3;
+  grid-row: 1 / -1;
+}
+
+.contacts__text-content p{
+  margin: 0;
+}
+
+.contacts__info {
+
+}

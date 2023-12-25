@@ -3,6 +3,59 @@
   flex-direction: column;
   gap: 22px;
   padding: 32px 120px;
+
+  @include vp-1199 {
+    gap: 34px;
+    padding: 34px 45px 20px;
+  }
+
+  @include vp-767 {
+    gap: 23px;
+    padding: 23px 27px 20px;
+  }
+}
+
+.footer__title {
+  position: relative;
+  margin: 0 0 25px;
+  font-size: $fz-h2;
+  line-height: $fz-h2;
+  font-weight: $fw-extra-bold;
+
+  @include vp-1199 {
+    align-self: flex-end;
+    font-size: $fz-h2-tablet;
+    line-height: $fz-h2-tablet;
+  }
+
+  @include vp-767 {
+    font-size: $fz-h2-mobile;
+    line-height: $fz-h2-mobile;
+  }
+
+  &::after {
+    position: absolute;
+    content: "Контакты";
+    left: 0;
+    bottom: 0;
+    height: $fz-h2-decorate;
+    width: 100%;
+    font-size: $fz-h2-decorate;
+    line-height: $fz-h2-decorate;
+    opacity: 0.03;
+
+    @include vp-1199 {
+      height: calc($fz-h2-decorate - 15px);
+      font-size: calc($fz-h2-decorate - 15px);
+      line-height: calc($fz-h2-decorate - 15px);
+    }
+
+    @include vp-767 {
+      height: $fz-h1-mobile;
+      font-size: $fz-h1-mobile;
+      line-height: $fz-h1-mobile;
+    }
+  }
 }
 
 .footer__wrapper {
@@ -10,12 +63,40 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  @include vp-767 {
+    flex-direction: column;
+    gap: 23px;
+  }
+}
+
+.footer__logo svg{
+  display: block;
+
+  @include vp-1199 {
+    width: 142px;
+    height: 42px;
+  }
 }
 
 .footer__navigation-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+
+  @include vp-1199 {
+    gap: 20px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    grid-auto-flow: column;
+    row-gap: 15px;
+    justify-items: center;
+  }
 }
 
 .footer__link {
@@ -28,12 +109,20 @@
   font-size: $fz-h6;
   line-height: $fz-h6;
   font-weight: $fw-semi-bold;
+
+  @include vp-1199  {
+    display: none;
+  }
 }
 
 .footer__social-list {
   display: flex;
   align-self: center;
   gap: 15px;
+
+  @include vp-1199 {
+    gap: 16px;
+  }
 }
 
 .footer__policy {
