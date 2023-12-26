@@ -895,12 +895,6 @@
             <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться
               увлекательными историями и подобрать для вас тур.</p>
           </div>
-          <picture>
-            <source media="max-width: 1199px" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x" width="1024"
-              height="340">
-            <img src="img/map-desktop.jpg" srcset="img/map-desktop@2x.jpg 2x" width="585" height="324"
-              alt="Наше местоположение на карте.">
-          </picture>
           <ul class="contacts__info-list contacts-list">
             <li class="contacts-list__item contacts-item">
               <svg width="26" height="26">
@@ -930,11 +924,19 @@
               </div>
             </li>
           </ul>
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/map-mobile.jpg 1x, img/map-mobile@2x.jpg 2x" width="350"
+            height="320">
+            <source media="(max-width: 1199px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x" width="1024"
+              height="340">
+            <img src="img/map-desktop.jpg" srcset="img/map-desktop@2x.jpg 2x" width="585" height="324"
+              alt="Наше местоположение на карте.">
+          </picture>
         </div>
       </section>
       <div class="footer__wrapper">
         <a class="footer__logo" href="">
-          <svg width="200" height="60" viewBox="0 0 142 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="142" height="42" viewBox="0 0 142 42" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_131_2520)">
               <path d="M15.7314 27.2445L19.4995 23.359L23.7857 27.2445H31.1334L19.4524 16.0044L7.86561 27.2445H15.7314Z"
                 fill="currentColor" />

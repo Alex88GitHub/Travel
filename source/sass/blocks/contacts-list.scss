@@ -5,4 +5,8 @@
 
 .contacts-list__item:not(:last-child) {
   margin: 0 0 35px;
+
+  @include vp-1199 {
+    margin: 0;
+  }
 }
