@@ -8,7 +8,7 @@
   grid-template-rows: repeat(2, auto);
   row-gap: 50px;
   column-gap: 115px;
-  margin: 0 0 95px;
+  margin: 0 0 93px;
 
   @include vp-1199 {
     display: block;
@@ -65,7 +65,7 @@
   @include vp-1199 {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    justify-content: space-between;
     margin: 0 0 40px;
   }
 

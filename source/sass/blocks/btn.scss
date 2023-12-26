@@ -1,10 +1,10 @@
 .btn {
   display: inline-flex;
   padding: 20px 34px;
-
+  font-size: $fz-default;
   font-family: $ff-placeholder;
   font-weight: $fw-medium;
-
+  justify-content: center;
   color: $color-default-white;
 
   background-color: $color-navy-blue;
@@ -37,6 +37,11 @@
     top: 50%;
     left: 23px;
     transform: translate(0, -50%);
+  }
+
+  &--submit {
+    width: 180px;
+    border-radius: 6px;
   }
 
   @include hover-focus {

@@ -884,6 +884,25 @@
         </div>
       </div>
     </section>
+    <section class="form" data-test="form">
+      <picture>
+        <source media="(max-width: 767px)" src="img/background-form-mobile.jpg 1x, img/background-form-mobile@2x.jpg 2x"
+          width="350" height="620">
+        <source media="(max-width: 1199px)"
+          src="img/background-form-tablet.jpg 1x, img/background-form-tablet@2x.jpg 2x" width="768" height="680">
+        <img src="img/background-form-desktop.jpg" srcset="img/background-form-desktop@2x.jpg 2x" width="1440"
+          height="760" alt="">
+      </picture>
+      <div class="form__text-content">
+        <h2>Остались вопросы?</h2>
+        <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
+      </div>
+      <form>
+        <input type="number" placeholder="Телефон" required>
+        <input type="email" placeholder="Email" required>
+        <button class="btn btn--submit" type="submit">Отправить</button>
+      </form>
+    </section>
 
     </main>
 
@@ -920,13 +939,13 @@
               </svg>
               <div class="contacts-item__text-wrapper">
                 <h3 class="contacts-item__title">Адрес</h3>
-                <p class="contacts-item__text">г. Москва, пр-т Мира, д. 14, офис 101</p>
+                <p class="contacts-item__text">г. Москва, пр-т Мира,<br> д. 14, офис 101</p>
               </div>
             </li>
           </ul>
           <picture>
             <source media="(max-width: 767px)" srcset="img/map-mobile.jpg 1x, img/map-mobile@2x.jpg 2x" width="350"
-            height="320">
+              height="320">
             <source media="(max-width: 1199px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x" width="1024"
               height="340">
             <img src="img/map-desktop.jpg" srcset="img/map-desktop@2x.jpg 2x" width="585" height="324"
@@ -1061,7 +1080,7 @@
       <ul class="footer__social-list social-list">
         <li class="social-list__item">
           <a class="social-list__link" href="#">
-            <svg width="22" height="22" role="img">
+            <svg width="16" height="16" role="img">
               <use href="img/sprite.svg#vk-icon"></use>
             </svg>
             <span class="visually-hidden">Вконтакте</span>
@@ -1069,7 +1088,7 @@
         </li>
         <li class="social-list__item">
           <a class="social-list__link" href="#">
-            <svg width="22" height="22" role="img">
+            <svg width="16" height="16" role="img">
               <use href="img/sprite.svg#ok-icon"></use>
             </svg>
             <span class="visually-hidden">Одноклассники</span>
@@ -1077,7 +1096,7 @@
         </li>
         <li class="social-list__item">
           <a class="social-list__link" href="#">
-            <svg width="22" height="22" role="img">
+            <svg width="16" height="16" role="img">
               <use href="img/sprite.svg#reddit-icon"></use>
             </svg>
             <span class="visually-hidden">Reddit</span>

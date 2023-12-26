@@ -1,8 +1,18 @@
 .footer-list {
+  min-width: 800px;
+  justify-content: center;
   margin: 0;
   padding: 0;
+
+  @include vp-1199 {
+    min-width: initial;
+  }
 }
 
 .footer-list__item {
   list-style: none;
+
+  @include vp-767 {
+    width: 120px;
+  }
 }
