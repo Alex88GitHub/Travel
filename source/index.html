@@ -20,6 +20,8 @@
     crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-800.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
 </head>
 
 <body>
@@ -150,7 +152,7 @@
                 <a class="navigation-item__link" href="#reviews">Отзывы</a>
               </li>
               <li class="navigation-list__item navigation-item">
-                <a class="navigation-item__link" href="">Фотографии</a>
+                <a class="navigation-item__link" href="#gallery">Фотографии</a>
               </li>
               <li class="navigation-list__item navigation-item">
                 <a class="navigation-item__link" href="#contacts">Контакты</a>
@@ -811,62 +813,62 @@
       <div class="container">
         <h2 class="advantages__title">Преимущества</h2>
         <div class="advantages__slider swiper" data-slider="advantages-slider">
-          <div class="advantages__slider-wrapper swiper-wrapper swiper-no-swiping">
-            <div class="advantages__slide swiper-slide advantages-slide">
+          <ul class="advantages__list swiper-wrapper swiper-no-swiping">
+            <li class="advantages__slide swiper-slide advantages-item">
               <svg width="54" height="54">
                 <use href="img/sprite.svg#shield-icon"></use>
               </svg>
-              <div class="advantages-slide__text-content">
+              <div class="advantages-item__text-content">
                 <h3>Безопасность</h3>
                 <p>Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности. Имеем
                   планы действий на случай непредвиденных обстоятельств и даём гарантию полной безопасности во время
                   всего тура.</p>
               </div>
-            </div>
-            <div class="advantages__slide swiper-slide advantages-slide">
+            </li>
+            <li class="advantages__slide swiper-slide advantages-item">
               <svg width="54" height="54">
                 <use href="img/sprite.svg#crown-icon"></use>
               </svg>
-              <div class="advantages-slide__text-content">
+              <div class="advantages-item__text-content">
                 <h3>Экспертиза и знания</h3>
                 <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике
                   безопасности. Это гарантирует, что наши клиенты находятся в&nbsp;надежных руках и могут в полной мере
                   насладиться опытом без опасений.</p>
               </div>
-            </div>
-            <div class="advantages__slide swiper-slide advantages-slide">
+            </li>
+            <li class="advantages__slide swiper-slide advantages-item">
               <svg width="54" height="54">
                 <use href="img/sprite.svg#boots-icon"></use>
               </svg>
-              <div class="advantages-slide__text-content">
+              <div class="advantages-item__text-content">
                 <h3>Оборудование и снаряжение</h3>
                 <p>Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет
                   клиентов от необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным
                   и экономически выгодным.</p>
               </div>
-            </div>
-            <div class="advantages__slide swiper-slide advantages-slide">
+            </li>
+            <li class="advantages__slide swiper-slide advantages-item">
               <svg width="54" height="54">
                 <use href="img/sprite.svg#path-icon"></use>
               </svg>
-              <div class="advantages-slide__text-content">
+              <div class="advantages-item__text-content">
                 <h3>Индивидуальные маршруты</h3>
                 <p>Предлагаем широкий выбор туров, отвечающих различным уровням мастерства и интересам. Мы также можем
                   адаптировать маршруты к вашим конкретным потребностям и предпочтениям, чтобы вы получили
                   индивидуальный опыт.</p>
               </div>
-            </div>
-            <div class="advantages__slide swiper-slide advantages-slide">
+            </li>
+            <li class="advantages__slide swiper-slide advantages-item">
               <svg width="54" height="54">
                 <use href="img/sprite.svg#leaf-icon"></use>
               </svg>
-              <div class="advantages-slide__text-content">
-                <h3>Бережное отношение к природе</h3>
+              <div class="advantages-item__text-content">
+                <h3>Бережное отношение<br>к природе</h3>
                 <p>Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное
                   воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».</p>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
         <div class="advantages__slider-btn-wrapper">
           <button class="advantages__btn-prev swiper-button-prev" data-slider="advantages-prev-button">
@@ -884,24 +886,145 @@
         </div>
       </div>
     </section>
-    <section class="form" data-test="form">
-      <picture>
-        <source media="(max-width: 767px)" src="img/background-form-mobile.jpg 1x, img/background-form-mobile@2x.jpg 2x"
-          width="350" height="620">
-        <source media="(max-width: 1199px)"
-          src="img/background-form-tablet.jpg 1x, img/background-form-tablet@2x.jpg 2x" width="768" height="680">
-        <img src="img/background-form-desktop.jpg" srcset="img/background-form-desktop@2x.jpg 2x" width="1440"
-          height="760" alt="">
-      </picture>
-      <div class="form__text-content">
-        <h2>Остались вопросы?</h2>
-        <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
+    <section class="gallery" id="gallery" data-test="gallery">
+      <div class="container">
+        <h2 class="gallery__title">Фотогалерея</h2>
+        <div class="gallery__wrapper">
+          <div class="gallery__text-content">
+            <p>Добавляйте фото в Instagram с хэштегом #лайфтур, а также отмечайте нас на фото. Лучшие фотографии украсят
+              этот раздел нашего сайта.</p>
+          </div>
+          <div class="gallery__slider-btn-wrapper">
+            <button class="gallery__btn-prev swiper-button-prev" data-slider="gallery-prev-button">
+              <svg width="13" height="11">
+                <use href="img/sprite.svg#left-arrow-icon"></use>
+              </svg>
+              <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="gallery__btn-next swiper-button-next" data-slider="gallery-next-button">
+              <svg width="13" height="11">
+                <use href="img/sprite.svg#right-arrow-icon"></use>
+              </svg>
+              <span class="visually-hidden">Следующий</span>
+            </button>
+          </div>
+        </div>
       </div>
-      <form>
-        <input type="number" placeholder="Телефон" required>
-        <input type="email" placeholder="Email" required>
-        <button class="btn btn--submit" type="submit">Отправить</button>
-      </form>
+      <div class="gallery__slider swiper" data-slider="gallery-slider">
+        <div class="gallery__slider-wrapper swiper-wrapper swiper-no-swiping">
+          <div class="gallery__slide swiper-slide">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/gallery-mobile-1.jpg 1x, img/gallery-mobile-1@2x.jpg 2x"
+                width="159" height="260">
+              <source media="(max-width: 1199px)" srcset="img/gallery-tablet-1.jpg 1x, img/gallery-tablet-1@2x.jpg 2x"
+                width="253" height="450">
+              <img src="img/gallery-desktop-1.jpg" srcset="img/gallery-desktop-1@2x.jpg 2x" width="275" height="449"
+                alt="Фотография галереи.">
+            </picture>
+          </div>
+          <div class="gallery__slide swiper-slide gallery__slide--two-photo">
+            <div class="gallery__slide-wrapper">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/gallery-mobile-2.jpg 1x, img/gallery-mobile-2@2x.jpg 2x"
+                  width="159" height="100">
+                <source media="(max-width: 1199px)" srcset="img/gallery-tablet-2.jpg 1x, img/gallery-tablet-2@2x.jpg 2x"
+                  width="253" height="180">
+                <img src="img/gallery-desktop-2.jpg" srcset="img/gallery-desktop-2@2x.jpg 2x" width="298" height="179"
+                  alt="Фотография галереи.">
+              </picture>
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/gallery-mobile-3.jpg 1x, img/gallery-mobile-3@2x.jpg 2x"
+                  width="159" height="157">
+                <source media="(max-width: 1199px)" srcset="img/gallery-tablet-3.jpg 1x, img/gallery-tablet-3@2x.jpg 2x"
+                  width="338" height="265">
+                <img src="img/gallery-desktop-3.jpg" srcset="img/gallery-desktop-3@2x.jpg 2x" width="298" height="265"
+                  alt="Фотография галереи.">
+              </picture>
+            </div>
+          </div>
+          <div class="gallery__slide swiper-slide">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/gallery-desktop-4.jpg 1x, img/gallery-desktop-4@2x.jpg 2x"
+                width="159" height="260">
+              <source media="(max-width: 1199px)" srcset="img/gallery-tablet-4.jpg 1x, img/gallery-tablet-4@2x.jpg 2x"
+                width="253" height="450">
+              <img src="img/gallery-desktop-4.jpg" srcset="img/gallery-desktop-4@2x.jpg 2x" width="275" height="449"
+                alt="Фотография галереи.">
+            </picture>
+          </div>
+          <div class="gallery__slide swiper-slide gallery__slide--two-photo">
+            <div class="gallery__slide-wrapper">
+              <picture>
+                <source media="(max-width: 767px)"
+                  srcset="img/gallery-desktop-5.jpg 1x, img/gallery-desktop-5@2x.jpg 2x" width="159" height="100">
+                <source media="(max-width: 1199px)"
+                  srcset="img/gallery-desktop-5.jpg 1x, img/gallery-desktop-5@2x.jpg 2x" width="253" height="180">
+                <img src="img/gallery-desktop-5.jpg" srcset="img/gallery-desktop-5@2x.jpg 2x" width="298" height="179"
+                  alt="Фотография галереи.">
+              </picture>
+              <picture>
+                <source media="(max-width: 767px)"
+                  srcset="img/gallery-desktop-6.jpg 1x, img/gallery-desktop-6@2x.jpg 2x" width="159" height="157">
+                <source media="(max-width: 1199px)"
+                  srcset="img/gallery-desktop-6.jpg 1x, img/gallery-desktop-6@2x.jpg 2x" width="338" height="265">
+                <img src="img/gallery-desktop-6.jpg" srcset="img/gallery-desktop-6@2x.jpg 2x" width="298" height="265"
+                  alt="Фотография галереи.">
+              </picture>
+            </div>
+          </div>
+          <div class="gallery__slide swiper-slide">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/gallery-desktop-7.jpg 1x, img/gallery-desktop-7@2x.jpg 2x"
+                width="159" height="260">
+              <source media="(max-width: 1199px)" srcset="img/gallery-desktop-7.jpg 1x, img/gallery-desktop-7@2x.jpg 2x"
+                width="253" height="450">
+              <img src="img/gallery-desktop-7.jpg" srcset="img/gallery-desktop-7@2x.jpg 2x" width="275" height="449"
+                alt="Фотография галереи.">
+            </picture>
+          </div>
+          <div class="gallery__slide swiper-slide gallery__slide--two-photo">
+            <div class="gallery__slide-wrapper">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/gallery-mobile-2.jpg 1x, img/gallery-mobile-2@2x.jpg 2x"
+                  width="159" height="100">
+                <source media="(max-width: 1199px)" srcset="img/gallery-tablet-2.jpg 1x, img/gallery-tablet-2@2x.jpg 2x"
+                  width="253" height="180">
+                <img src="img/gallery-desktop-2.jpg" srcset="img/gallery-desktop-2@2x.jpg 2x" width="298" height="179"
+                  alt="Фотография галереи.">
+              </picture>
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/gallery-mobile-3.jpg 1x, img/gallery-mobile-3@2x.jpg 2x"
+                  width="159" height="157">
+                <source media="(max-width: 1199px)" srcset="img/gallery-tablet-3.jpg 1x, img/gallery-tablet-3@2x.jpg 2x"
+                  width="338" height="265">
+                <img src="img/gallery-desktop-3.jpg" srcset="img/gallery-desktop-3@2x.jpg 2x" width="298" height="265"
+                  alt="Фотография галереи.">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="form" data-test="form">
+      <div class="container container--form">
+        <picture>
+          <source media="(max-width: 767px)"
+            srcset="img/background-form-mobile.jpg 1x, img/background-form-mobile@2x.jpg 2x" width="350" height="620">
+          <source media="(max-width: 1199px)"
+            srcset="img/background-form-tablet.jpg 1x, img/background-form-tablet@2x.jpg 2x" width="768" height="680">
+          <img src="img/background-form-desktop.jpg" srcset="img/background-form-desktop@2x.jpg 2x" width="1440"
+            height="760" alt="">
+        </picture>
+        <div class="form__text-content">
+          <h2>Остались вопросы?</h2>
+          <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
+        </div>
+        <form>
+          <input type="number" placeholder="Телефон" required>
+          <input type="email" placeholder="Email" required>
+          <button class="btn btn--submit" type="submit">Отправить</button>
+        </form>
+      </div>
     </section>
 
     </main>
@@ -1069,7 +1192,7 @@
             <a class="footer__link" href="#reviews">Отзывы</a>
           </li>
           <li class="footer-list__item">
-            <a class="footer__link" href="#">Фотографии</a>
+            <a class="footer__link" href="#gallery">Фотографии</a>
           </li>
           <li class="footer-list__item">
             <a class="footer__link" href="#contacts">Контакты</a>

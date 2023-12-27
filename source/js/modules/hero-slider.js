@@ -8,7 +8,14 @@ export const heroSlider = () => {
       clickable: true,
     },
     loop: true,
-    allowTouchMove: 'false',
     spaceBetween: 40,
+    breakpoints: {
+      350: {
+        noSwiping: false,
+      },
+      1200: {
+        noSwiping: true,
+      },
+    },
   });
 };

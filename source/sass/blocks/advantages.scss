@@ -1,6 +1,16 @@
 .advantages {
   padding-top: 65px;
   padding-bottom: 81px;
+
+  @include vp-1199 {
+    padding-top: 68px;
+    padding-bottom: 45px;
+  }
+
+  @include vp-767 {
+    padding-top: 48px;
+    padding-bottom: 40px;
+  }
 }
 
 .advantages__slider.swiper {
@@ -15,11 +25,13 @@
   text-align: center;
 
   @include vp-1199 {
-    font-size: $fz-h2-tablet;
-    line-height: $fz-h2-tablet;
+    margin: 0 0 47px;
+    // font-size: $fz-h2-tablet;
+    // line-height: $fz-h2-tablet;
   }
 
   @include vp-767 {
+    margin: 0 0 19px;
     font-size: $fz-h2-mobile;
     line-height: $fz-h2-mobile;
   }
@@ -36,9 +48,9 @@
     opacity: 0.03;
 
     @include vp-1199 {
-      height: calc($fz-h2-decorate - 15px);
-      font-size: calc($fz-h2-decorate - 15px);
-      line-height: calc($fz-h2-decorate - 15px);
+      // height: calc($fz-h2-decorate - 15px);
+      // font-size: calc($fz-h2-decorate - 15px);
+      // line-height: calc($fz-h2-decorate - 15px);
     }
 
     @include vp-767 {
@@ -49,8 +61,21 @@
   }
 }
 
-.advantages__slider-wrapper {
+.advantages__list {
+  margin: 0;
   padding: 47px 0 50px;
+
+  @include vp-1199 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 0;
+  }
+
+  @include vp-767 {
+    gap: 15PX;
+  }
 }
 
 .advantages__slider-btn-wrapper {
@@ -60,6 +85,10 @@
   display: flex;
   justify-content: center;
   gap: 4px;
+
+  @include vp-1199 {
+    display: none;
+  }
 }
 
 .advantages__btn-prev.swiper-button-prev,

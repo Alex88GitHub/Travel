@@ -1,9 +1,20 @@
 .form {
   position: relative;
-  max-width: 1440px;
-  min-height: 760px;
-  // z-index: 1;
-  padding: 40px;
+  // max-width: 1440px;
+  // margin: 0 auto;
+  // min-height: 760px;
+  // z-index: 0;
+  // padding: 293px 100px 287px;
+
+  // @include vp-1199 {
+  //   // max-width: 1199px;
+  //   // min-height: 680px;
+  //   padding: 293px 40px 40px;
+  // }
+
+  // @include vp-767 {
+  //   padding: 174px 31px;
+  // }
 }
 
 .form picture {
@@ -11,13 +22,31 @@
   z-index: 0;
   top: 0;
   left: 0;
+  width: 100%;
+}
+
+.form img {
+  width: 100%;
 }
 
 .form__text-content {
-  position: absolute;
-  top: 293px;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  z-index: 1;
+  margin: 0 0 40px;
+  // top: 293px;
+  // left: 50%;
+  // transform: translateX(-50%);
+
+  @include vp-1199 {
+    // top: 187px;
+    margin: 0 0 23px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 20px;
+    // position: relative;
+    // top: initial;
+  }
 }
 
 .form__text-content h2 {
@@ -27,37 +56,84 @@
   font-weight: $fw-extra-bold;
   color: $color-default-white;
   text-align: center;
+
+  @include vp-1199 {
+    margin: 0 0 30px;
+    font-size: $fz-h2-tablet;
+    line-height: $fz-h2-tablet;
+  }
+
+  @include vp-767 {
+    margin: 0 0 20px;
+    font-size: calc($fz-h3 + 1px);
+    line-height: calc($fz-h3 + 1px);
+  }
 }
 
 .form__text-content p {
-  margin: 0 0 10px;
+  margin: 0 auto 10px;
   color: $color-default-white;
   text-align: center;
 
   @include vp-1199 {
-    // font-size: ;
-    // line-height: ;
+    width: 300px;
+  }
+
+  @include vp-767 {
+    font-size: $fz-xsmall;
+    line-height: calc($fz-big + 1px);
   }
 }
 
 .form__text-content p:last-child {
-  margin: 0 0 40px;
+  margin: 0 auto;
 }
 
 form {
-  position: absolute;
-  bottom: 293px;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  // bottom: 293px;
+  // left: 50%;
+  // transform: translateX(-50%);
   display: flex;
   gap: 30px;
   justify-content: center;
+
+  @include vp-1199 {
+    // bottom: 187px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    width: 271px;
+    margin: 0 auto;
+
+  }
+
+  @include vp-767 {
+    width: 100%;
+    gap: 9px;
+    // position: initial;
+    // top: auto;
+
+  }
 }
 
 form input {
+  width: 360px;
   padding: 20px 30px;
   border: 1px solid rgba(45, 56, 63, 0.1);
   border-radius: 2px;
+
+  @include vp-1199 {
+    width: 100%;
+    padding: 15px 15px;
+    font-size: $fz-default;
+    line-height: $fz-default;
+    border-radius: 0;
+  }
+
+  @include vp-767 {
+    padding: 14px 15px;
+  }
 }
 
 form input::placeholder {

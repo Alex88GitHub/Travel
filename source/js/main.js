@@ -7,6 +7,7 @@ import {setupAudio} from './modules/audio';
 import {initJs} from './modules/init-js';
 import './modules/breakpoints';
 import './modules/burger-menu';
+import './modules/advantages-slider';
 
 // ---------------------------------
 
@@ -19,7 +20,8 @@ window.addEventListener('DOMContentLoaded', () => {
   initJs();
   setupVideo();
   setupAudio();
-
+  // initAdvantagesSlider();
+  // handleResize();
   // Modules
   // ---------------------------------
   initSliders();
