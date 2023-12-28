@@ -1,59 +1,35 @@
 // Colors
 // ---------------------------------
-
 // Default
 
 $color-default-black:               #2d383f;
 $color-default-white:               #ffffff;
 $color-transparent:                 rgba(255, 255, 255, 0);
-
-// Project palette
-// для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
-
 $color-navy-blue:                   #0266c1;
 $color-resolution-blue:             #1c3374;
 $color-torch-red:                   #ff1553;
 $color-nobel:                       #999999;
 
-
-// Gradient
-
-
-
 // Typography
 // ---------------------------------
-
 //font-size
 $fz-h1-desktop:                     77px;
 $fz-h1-tablet:                      56px;
 $fz-h1-mobile:                      26px;
 $fz-h2-decorate:                    55px;
-$fz-h2:                             35px;
+$fz-h2-desktop:                     35px;
 $fz-h2-tablet:                      25px;
 $fz-h2-mobile:                      22px;
-$fz-h3:                             21px;
+$fz-h3-desktop:                     21px;
 $fz-h3-tablet:                      18px;
-$fz-h5:                             4px;
-$fz-h6:                             18px;
-
 $fz-default:                        16px;
 $fz-big:                            17px;
 $fz-small:                          15px;
 $fz-small-tablet:                   14px;
 $fz-xsmall:                         12px;
 
-//line-height
-$lh-h1-desktop:                     $fz-h1-desktop;
-$lh-h1-tablet:                      $fz-h1-tablet;
-$lh-h1-mobile:                      $fz-h1-mobile;
-$lh-h2:                             $fz-h2;
-
-$lh-big:                            24px;
-$lh-default:                        22px;
-$lh-small:                          20px;
-$lh-xsmall:                         16px;
-
 //font-weight
+
 $fw-extra-bold:                     800;
 $fw-bold:                           700;
 $fw-semi-bold:                      600;
@@ -85,7 +61,6 @@ $vp-350:                            350px;
 $vp-768:                            768px;
 $vp-1200:                           1200px;
 $vp-1440:                           1440px;
-
 
 // Retina
 // ---------------------------------

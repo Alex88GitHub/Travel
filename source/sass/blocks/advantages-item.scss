@@ -83,7 +83,7 @@
 .advantages-item__text-content p {
   margin: 0 0 10px;
   font-size: $fz-small-tablet;
-  line-height: $lh-default;
+  line-height: $fz-h2-mobile;
   text-align: center;
 
   @include vp-767 {

@@ -1,25 +1,43 @@
-const menuButtonElement = document.querySelector('.header__navigation-toggle');
-const menuButtonImage = menuButtonElement.querySelector('svg');
+const menuButtonElement = document.querySelector('[data-menu="toggle"]');
+const menuButtonImage = menuButtonElement.querySelector('[data-menu="image"]');
 const menuButtonUseElement = menuButtonImage.querySelector('use');
-const headerElement = document.querySelector('.header__wrapper');
-const menuNavigationElement = headerElement.querySelector('.header__navigation');
+const headerElement = document.querySelector('[data-menu="header"]');
+const menuNavigationElement = headerElement.querySelector('[data-menu="navigation"]');
+const menuElements = menuNavigationElement.querySelectorAll('[data-menu="navigation-item"]');
+const bodyElement = document.querySelector('body');
 
-const switchMenu = () => {
-  headerElement.classList.toggle('header__wrapper-menu-opened');
-  menuNavigationElement.classList.toggle('header__navigation--opened');
+const closeMenu = () => {
+  headerElement.classList.remove('header__wrapper-menu-opened');
+  menuNavigationElement.classList.remove('header__navigation--opened');
+  menuButtonUseElement.setAttribute('href', 'img/sprite.svg#menu-icon');
+  menuElements.forEach((element) => {
+    element.removeEventListener('click', closeMenu);
+  });
+  bodyElement.style.overflow = 'visible';
 };
 
-const setmenuButtonImage = () => {
+const openMenu = () => {
+  headerElement.classList.add('header__wrapper-menu-opened');
+  menuNavigationElement.classList.add('header__navigation--opened');
+  menuButtonUseElement.setAttribute('href', 'img/sprite.svg#close-icon');
+  menuElements.forEach((element) => {
+    element.addEventListener('click', closeMenu);
+  });
+  bodyElement.style.overflow = 'hidden';
+};
+
+const switchMenu = () => {
   if (headerElement.classList.contains('header__wrapper-menu-opened')) {
-    menuButtonUseElement.setAttribute('href', 'img/sprite.svg#menu-icon');
+    closeMenu();
   } else {
-    menuButtonUseElement.setAttribute('href', 'img/sprite.svg#close-icon');
+    openMenu();
   }
 };
 
 const onMenuButtonElementClick = () => {
-  setmenuButtonImage();
   switchMenu();
 };
 
 menuButtonElement.addEventListener('click', onMenuButtonElementClick);
+
+switchMenu();

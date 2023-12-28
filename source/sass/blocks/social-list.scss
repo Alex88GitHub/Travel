@@ -7,10 +7,32 @@
   list-style: none;
 }
 
-
 .social-list__link {
   padding: 6px;
   border: 1px solid rgba($color: $color-default-black, $alpha: 0.2);
+
+  &:hover,
+  &:focus-visible {
+    outline: none;
+    border-color: $color-default-black;
+  }
+
+  &:active {
+    background-color: $color-navy-blue;
+    border-color: $color-transparent;
+  }
+
+  &:active svg {
+    color: $color-default-white;
+  }
+}
+
+.social-list__link.disabled {
+  pointer-events: none;
+}
+
+.social-list__link.disabled svg {
+  color: rgba($color: $color-default-black, $alpha: 0.3);
 }
 
 .social-list__link svg {

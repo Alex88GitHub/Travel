@@ -28,9 +28,9 @@
   <div class="wrapper">
     <div data-test="hero">
       <header class="header">
-        <div class="header__wrapper header__wrapper-menu-opened">
-          <button class="header__navigation-toggle toggle">
-            <svg width="26" height="26">
+        <div class="header__wrapper header__wrapper-menu-opened" data-menu="header">
+          <button class="header__navigation-toggle toggle" data-menu="toggle">
+            <svg width="26" height="26" data-menu="image" role="img">
               <use href="img/sprite.svg#menu-icon"></use>
             </svg>
             <span class="visually-hidden">Открыть/закрыть меню</span>
@@ -137,32 +137,31 @@
               </defs>
             </svg>
           </a>
-          <nav class="header__navigation header__navigation-no-js">
+          <nav class="header__navigation header__navigation-no-js" data-menu="navigation">
             <ul class="header__navigation-list navigation-list">
               <li class="navigation-list__item navigation-item">
-                <a class="navigation-item__link" href="#tours">Туры</a>
+                <a class="navigation-item__link" href="#tours" data-menu="navigation-item">Туры</a>
               </li>
               <li class="navigation-list__item navigation-item">
-                <a class="navigation-item__link" href="#training">Обучение</a>
+                <a class="navigation-item__link" href="#training" data-menu="navigation-item">Обучение</a>
               </li>
               <li class="navigation-list__item navigation-item">
-                <a class="navigation-item__link" href="#about">О нас</a>
+                <a class="navigation-item__link" href="#about" data-menu="navigation-item">О нас</a>
               </li>
               <li class="navigation-list__item navigation-item">
-                <a class="navigation-item__link" href="#reviews">Отзывы</a>
+                <a class="navigation-item__link" href="#reviews" data-menu="navigation-item">Отзывы</a>
               </li>
               <li class="navigation-list__item navigation-item">
-                <a class="navigation-item__link" href="#gallery">Фотографии</a>
+                <a class="navigation-item__link" href="#gallery" data-menu="navigation-item">Фотографии</a>
               </li>
               <li class="navigation-list__item navigation-item">
-                <a class="navigation-item__link" href="#contacts">Контакты</a>
+                <a class="navigation-item__link" href="#contacts" data-menu="navigation-item">Контакты</a>
               </li>
             </ul>
           </nav>
           <a class="header__phone" href="tel:88007253232">8 800 725-32-32</a>
         </div>
       </header>
-
       <main>
         <section class="hero swiper" data-slider="hero-slider">
           <div class="hero__slider-wrapper swiper-wrapper swiper-no-swiping">
@@ -198,13 +197,8 @@
                 </div>
                 <div class="hero__video">
                   <a class="hero__video-link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
-                    <!-- <picture>
-                    <source media="(max-width: 767px)"
-                      srcset="img/hero-image-1-tablet.jpg 1x, img/hero-image-1-tablet@2x.jpg 2x" width="442"
-                      height="300"> -->
                     <img src="img/hero-image-1-desktop.jpg" srcset="img/hero-image-1-desktop@2x.jpg 2x" width="482"
                       height="317" alt="Видео-обзор тура.">
-                    <!-- </picture> -->
                   </a>
                   <button class="hero__video-button btn btn--play" aria-label="Смотреть видео">
                     <svg width="12" height="22" role="img">
@@ -216,13 +210,8 @@
             </div>
             <div class="hero__slide swiper-slide" data-slider="hero-slide">
               <div class="container container--hero">
-                <!-- <picture> -->
-                <!-- <source media="(max-width: 1199px)"
-                  srcset="img/hero-background-tablet-2.jpg 1x, img/hero-background-tablet-2@2x.jpg 2x" width="768"
-                  height="1024"> -->
                 <img src="img/hero-background-desktop-2.jpg" srcset="img/hero-background-desktop-2@2x.jpg 2x"
                   width="1440" height="800" alt="">
-                <!-- </picture> -->
                 <div class="hero__text-content">
                   <h1>Невероятная природа Камчатки</h1>
                   <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых
@@ -308,13 +297,13 @@
           <h2 class="tours__title">Ближайшие туры</h2>
           <div class="tours__slider-btn-wrapper">
             <button class="tours__btn-prev swiper-button-prev" data-slider="tours-prev-button">
-              <svg width="14" height="12">
+              <svg width="14" height="12" role="img">
                 <use href="img/sprite.svg#left-arrow-icon"></use>
               </svg>
               <span class="visually-hidden">Предыдущий</span>
             </button>
             <button class="tours__btn-next swiper-button-next" data-slider="tours-next-button">
-              <svg width="14" height="12">
+              <svg width="14" height="12" role="img">
                 <use href="img/sprite.svg#right-arrow-icon"></use>
               </svg>
               <span class="visually-hidden">Следующий</span>
@@ -329,20 +318,20 @@
               <div class="tours-slide__content-wrapper">
                 <div class="tours-slide__info">
                   <div class="tours-slide__place">
-                    <svg width="16" height="16">
+                    <svg width="16" height="16" role="img">
                       <use href="img/sprite.svg#tours-geolocation-icon"></use>
                     </svg>
                     <span class="tours-slide__place-text">Алтай</span>
                   </div>
                   <div class="tours-slide__duration">
                     <div class="tours-slide__days">
-                      <svg width="20" height="20">
+                      <svg width="20" height="20" role="img">
                         <use href="img/sprite.svg#sun-icon"></use>
                       </svg>
                       <span class="tours-slide__duration-text">14 дней</span>
                     </div>
                     <div class="tours-slide__nights">
-                      <svg width="20" height="20">
+                      <svg width="20" height="20" role="img">
                         <use href="img/sprite.svg#moon-icon"></use>
                       </svg>
                       <span class="tours-slide__duration-text">13 ночей</span>
@@ -353,7 +342,7 @@
                 <div class="tours-slide__details">
                   <div class="tours-slide__difficulty">
                     <p class="tours-slide__details-title">Сложность:</p>
-                    <svg width="84" height="16">
+                    <svg width="84" height="16" role="img">
                       <use href="img/sprite.svg#stars-3-icon"></use>
                     </svg>
                   </div>
@@ -374,20 +363,20 @@
               <div class="tours-slide__content-wrapper">
                 <div class="tours-slide__info">
                   <div class="tours-slide__place">
-                    <svg width="16" height="16">
+                    <svg width="16" height="16" role="img">
                       <use href="img/sprite.svg#tours-geolocation-icon"></use>
                     </svg>
                     <span class="tours-slide__place-text">Кавказ</span>
                   </div>
                   <div class="tours-slide__duration">
                     <div class="tours-slide__days">
-                      <svg width="20" height="20">
+                      <svg width="20" height="20" role="img">
                         <use href="img/sprite.svg#sun-icon"></use>
                       </svg>
                       <span class="tours-slide__duration-text">4 дня</span>
                     </div>
                     <div class="tours-slide__nights">
-                      <svg width="20" height="20">
+                      <svg width="20" height="20" role="img">
                         <use href="img/sprite.svg#moon-icon"></use>
                       </svg>
                       <span class="tours-slide__duration-text">3 ночи</span>
@@ -398,7 +387,7 @@
                 <div class="tours-slide__details">
                   <div class="tours-slide__difficulty">
                     <p class="tours-slide__details-title">Сложность:</p>
-                    <svg width="84" height="16">
+                    <svg width="84" height="16" role="img">
                       <use href="img/sprite.svg#stars-4-icon"></use>
                     </svg>
                   </div>
@@ -419,20 +408,20 @@
               <div class="tours-slide__content-wrapper">
                 <div class="tours-slide__info">
                   <div class="tours-slide__place">
-                    <svg width="16" height="16">
+                    <svg width="16" height="16" role="img">
                       <use href="img/sprite.svg#tours-geolocation-icon"></use>
                     </svg>
                     <span class="tours-slide__place-text">Алтай</span>
                   </div>
                   <div class="tours-slide__duration">
                     <div class="tours-slide__days">
-                      <svg width="20" height="20">
+                      <svg width="20" height="20" role="img">
                         <use href="img/sprite.svg#sun-icon"></use>
                       </svg>
                       <span class="tours-slide__duration-text">14 дней</span>
                     </div>
                     <div class="tours-slide__nights">
-                      <svg width="20" height="20">
+                      <svg width="20" height="20" role="img">
                         <use href="img/sprite.svg#moon-icon"></use>
                       </svg>
                       <span class="tours-slide__duration-text">13 ночей</span>
@@ -443,7 +432,7 @@
                 <div class="tours-slide__details">
                   <div class="tours-slide__difficulty">
                     <p class="tours-slide__details-title">Сложность:</p>
-                    <svg width="84" height="16">
+                    <svg width="84" height="16" role="img">
                       <use href="img/sprite.svg#stars-3-icon"></use>
                     </svg>
                   </div>
@@ -464,20 +453,20 @@
               <div class="tours-slide__content-wrapper">
                 <div class="tours-slide__info">
                   <div class="tours-slide__place">
-                    <svg width="16" height="16">
+                    <svg width="16" height="16" role="img">
                       <use href="img/sprite.svg#tours-geolocation-icon"></use>
                     </svg>
                     <span class="tours-slide__place-text">Адыгея</span>
                   </div>
                   <div class="tours-slide__duration">
                     <div class="tours-slide__days">
-                      <svg width="20" height="20">
+                      <svg width="20" height="20" role="img">
                         <use href="img/sprite.svg#sun-icon"></use>
                       </svg>
                       <span class="tours-slide__duration-text">7 дней</span>
                     </div>
                     <div class="tours-slide__nights">
-                      <svg width="20" height="20">
+                      <svg width="20" height="20" role="img">
                         <use href="img/sprite.svg#moon-icon"></use>
                       </svg>
                       <span class="tours-slide__duration-text">6 ночей</span>
@@ -488,7 +477,7 @@
                 <div class="tours-slide__details">
                   <div class="tours-slide__difficulty">
                     <p class="tours-slide__details-title">Сложность:</p>
-                    <svg width="84" height="16">
+                    <svg width="84" height="16" role="img">
                       <use href="img/sprite.svg#stars-4-icon"></use>
                     </svg>
                   </div>
@@ -507,7 +496,7 @@
         </div>
         <div class="tours__link-wrapper">
           <a class="tours__link" href="#">Показать все туры</a>
-          <svg width="9" height="14">
+          <svg width="9" height="14" role="img">
             <use href="img/sprite.svg#arrow-right-icon"></use>
           </svg>
         </div>
@@ -524,13 +513,13 @@
           <h3 class="training__subtitle training__subtitle--exception">Наши инструкторы</h3>
           <div class="training__slider-btn-wrapper">
             <button class="training__btn-prev swiper-button-prev" data-slider="trainers-prev-button">
-              <svg width="13" height="11">
+              <svg width="13" height="11" role="img">
                 <use href="img/sprite.svg#left-arrow-icon"></use>
               </svg>
               <span class="visually-hidden">Предыдущий</span>
             </button>
             <button class="training__btn-next swiper-button-next" data-slider="trainers-next-button">
-              <svg width="13" height="11">
+              <svg width="13" height="11" role="img">
                 <use href="img/sprite.svg#right-arrow-icon"></use>
               </svg>
               <span class="visually-hidden">Следующий</span>
@@ -545,7 +534,7 @@
               <div class="trainers-slide__title-wrapper">
                 <h4 class="trainers-slide__title">Федор Кайгородов</h4>
                 <a class="trainers-slide__link" href="#">
-                  <svg width="15" height="8">
+                  <svg width="15" height="8" role="img">
                     <use href="img/sprite.svg#vk-icon"></use>
                   </svg>
                 </a>
@@ -565,7 +554,7 @@
               <div class="trainers-slide__title-wrapper">
                 <h4 class="trainers-slide__title">Александр Прокофьев</h4>
                 <a class="trainers-slide__link" href="#">
-                  <svg width="15" height="8">
+                  <svg width="15" height="8" role="img">
                     <use href="img/sprite.svg#vk-icon"></use>
                   </svg>
                 </a>
@@ -584,7 +573,7 @@
               <div class="trainers-slide__title-wrapper">
                 <h4 class="trainers-slide__title">Светлана Афиногенова</h4>
                 <a class="trainers-slide__link" href="#">
-                  <svg width="15" height="8">
+                  <svg width="15" height="8" role="img">
                     <use href="img/sprite.svg#vk-icon"></use>
                   </svg>
                 </a>
@@ -606,7 +595,7 @@
               <div class="trainers-slide__title-wrapper">
                 <h4 class="trainers-slide__title">Надежда Колесниченко</h4>
                 <a class="trainers-slide__link" href="#">
-                  <svg width="15" height="8">
+                  <svg width="15" height="8" role="img">
                     <use href="img/sprite.svg#vk-icon"></use>
                   </svg>
                 </a>
@@ -624,7 +613,7 @@
               <div class="trainers-slide__title-wrapper">
                 <h4 class="trainers-slide__title">Федор Кайгородов</h4>
                 <a class="trainers-slide__link" href="#">
-                  <svg width="15" height="8">
+                  <svg width="15" height="8" role="img">
                     <use href="img/sprite.svg#vk-icon"></use>
                   </svg>
                 </a>
@@ -640,28 +629,28 @@
           <h3 class="training__subtitle">Процесс обучения</h3>
           <ul class="training__steps-list steps-list">
             <li class="steps-list__item steps-item steps-item--dot-down steps-item--line-down steps-item--dot-left">
-              <svg width="25" height="25">
+              <svg width="25" height="25" role="img">
                 <use href="img/sprite.svg#map-steps-icon"></use>
               </svg>
               <p class="steps-item__text">Изучение спортивного туристского движения</p>
             </li>
             <li
               class="steps-list__item steps-item steps-item--dot-down steps-item--line-down steps-item--line-up-down steps-item--dot-left">
-              <svg width="25" height="25">
+              <svg width="25" height="25" role="img">
                 <use href="img/sprite.svg#boots-steps-icon"></use>
               </svg>
               <p class="steps-item__text">Подготовка и техническое снаряжение в походах</p>
             </li>
             <li
               class="steps-list__item steps-item steps-item--dot-down steps-item--line-down steps-item--dot-up steps-item--line-down-up steps-item--dot-left">
-              <svg width="25" height="25">
+              <svg width="25" height="25" role="img">
                 <use href="img/sprite.svg#trees-steps-icon"></use>
               </svg>
               <p class="steps-item__text">Лекции по окружающей среде, экологии и гигиене</p>
             </li>
             <li
               class="steps-list__item steps-item steps-item--dot-down steps-item--line-down steps-item--dot-up steps-item--line-upper steps-item--dot-left">
-              <svg width="25" height="25">
+              <svg width="25" height="25" role="img">
                 <use href="img/sprite.svg#mountains-steps-icon"></use>
               </svg>
               <p class="steps-item__text">Разъяснение сложности горных препятствий</p>
@@ -708,13 +697,13 @@
           <h2 class="reviews__title">Отзывы</h2>
           <div class="reviews__slider-btn-wrapper">
             <button class="reviews__btn-prev swiper-button-prev" data-slider="reviews-prev-button">
-              <svg width="14" height="12">
+              <svg width="14" height="12" role="img">
                 <use href="img/sprite.svg#left-arrow-icon"></use>
               </svg>
               <span class="visually-hidden">Предыдущий</span>
             </button>
             <button class="reviews__btn-next swiper-button-next" data-slider="reviews-next-button">
-              <svg width="14" height="12">
+              <svg width="14" height="12" role="img">
                 <use href="img/sprite.svg#right-arrow-icon"></use>
               </svg>
               <span class="visually-hidden">Следующий</span>
@@ -815,7 +804,7 @@
         <div class="advantages__slider swiper" data-slider="advantages-slider">
           <ul class="advantages__list swiper-wrapper swiper-no-swiping">
             <li class="advantages__slide swiper-slide advantages-item">
-              <svg width="54" height="54">
+              <svg width="54" height="54" role="img">
                 <use href="img/sprite.svg#shield-icon"></use>
               </svg>
               <div class="advantages-item__text-content">
@@ -826,7 +815,7 @@
               </div>
             </li>
             <li class="advantages__slide swiper-slide advantages-item">
-              <svg width="54" height="54">
+              <svg width="54" height="54" role="img">
                 <use href="img/sprite.svg#crown-icon"></use>
               </svg>
               <div class="advantages-item__text-content">
@@ -837,7 +826,7 @@
               </div>
             </li>
             <li class="advantages__slide swiper-slide advantages-item">
-              <svg width="54" height="54">
+              <svg width="54" height="54" role="img">
                 <use href="img/sprite.svg#boots-icon"></use>
               </svg>
               <div class="advantages-item__text-content">
@@ -848,7 +837,7 @@
               </div>
             </li>
             <li class="advantages__slide swiper-slide advantages-item">
-              <svg width="54" height="54">
+              <svg width="54" height="54" role="img">
                 <use href="img/sprite.svg#path-icon"></use>
               </svg>
               <div class="advantages-item__text-content">
@@ -859,7 +848,7 @@
               </div>
             </li>
             <li class="advantages__slide swiper-slide advantages-item">
-              <svg width="54" height="54">
+              <svg width="54" height="54" role="img">
                 <use href="img/sprite.svg#leaf-icon"></use>
               </svg>
               <div class="advantages-item__text-content">
@@ -872,13 +861,13 @@
         </div>
         <div class="advantages__slider-btn-wrapper">
           <button class="advantages__btn-prev swiper-button-prev" data-slider="advantages-prev-button">
-            <svg width="14" height="12">
+            <svg width="14" height="12" role="img">
               <use href="img/sprite.svg#left-arrow-icon"></use>
             </svg>
             <span class="visually-hidden">Предыдущий</span>
           </button>
           <button class="advantages__btn-next swiper-button-next" data-slider="advantages-next-button">
-            <svg width="14" height="12">
+            <svg width="14" height="12" role="img">
               <use href="img/sprite.svg#right-arrow-icon"></use>
             </svg>
             <span class="visually-hidden">Следующий</span>
@@ -896,13 +885,13 @@
           </div>
           <div class="gallery__slider-btn-wrapper">
             <button class="gallery__btn-prev swiper-button-prev" data-slider="gallery-prev-button">
-              <svg width="13" height="11">
+              <svg width="13" height="11" role="img">
                 <use href="img/sprite.svg#left-arrow-icon"></use>
               </svg>
               <span class="visually-hidden">Предыдущий</span>
             </button>
             <button class="gallery__btn-next swiper-button-next" data-slider="gallery-next-button">
-              <svg width="13" height="11">
+              <svg width="13" height="11" role="img">
                 <use href="img/sprite.svg#right-arrow-icon"></use>
               </svg>
               <span class="visually-hidden">Следующий</span>
@@ -1005,7 +994,7 @@
         </div>
       </div>
     </section>
-    <section class="form" data-test="form">
+    <section class="feedback" data-test="form">
       <div class="container container--form">
         <picture>
           <source media="(max-width: 767px)"
@@ -1015,20 +1004,28 @@
           <img src="img/background-form-desktop.jpg" srcset="img/background-form-desktop@2x.jpg 2x" width="1440"
             height="760" alt="">
         </picture>
-        <div class="form__text-content">
+        <div class="feedback__text-content">
           <h2>Остались вопросы?</h2>
           <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
         </div>
-        <form>
-          <input type="number" placeholder="Телефон" required>
-          <input type="email" placeholder="Email" required>
-          <button class="btn btn--submit" type="submit">Отправить</button>
-        </form>
+        <div data-form-validate="data-form-validate" data-callback="base">
+          <form action="https://echo.htmlacademy.ru" method="post" data-form-feedback="data-form-feedback">
+            <div class="feedback__form-input" data-validate-type="phone" data-required="data-required">
+              <label aria-label="Введите номер телефона">
+                <input type="tel" name="phone" placeholder="Телефон" autocomplete="off" required>
+              </label>
+            </div>
+            <div class="feedback__form-input" data-validate-type="email" data-required="data-required">
+              <label aria-label="Введите адрес электронной почты">
+                <input type="email" name="email" placeholder="Email" autocomplete="off" required>
+              </label>
+            </div>
+            <button class="btn btn--submit" type="submit">Отправить</button>
+          </form>
+        </div>
       </div>
     </section>
-
     </main>
-
     <footer class="footer" id="contacts" data-test="footer">
       <section class="contacts">
         <h2 class="footer__title">Контакты</h2>
@@ -1048,7 +1045,7 @@
               </div>
             </li>
             <li class="contacts-list__item contacts-item">
-              <svg width="26" height="26">
+              <svg width="26" height="26" role="img">
                 <use href="img/sprite.svg#contacts-mail-icon"></use>
               </svg>
               <div class="contacts-item__text-wrapper">
@@ -1057,7 +1054,7 @@
               </div>
             </li>
             <li class="contacts-list__item contacts-item">
-              <svg width="26" height="26">
+              <svg width="26" height="26" role="img">
                 <use href="img/sprite.svg#contacts-location-icon"></use>
               </svg>
               <div class="contacts-item__text-wrapper">
@@ -1172,7 +1169,7 @@
                 fill="currentColor" />
             </g>
             <defs>
-              <clipPath id="clip0_131_2520">
+              <clipPath>
                 <rect width="205" height="62" fill="white" />
               </clipPath>
             </defs>
@@ -1228,41 +1225,9 @@
       </ul>
       <a class="footer__policy" href="#">Политика конфиденциальности</a>
     </footer>
-
   </div>
-
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 
 </html>
-
-
-<!-- Модалки
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div> -->

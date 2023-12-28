@@ -46,11 +46,11 @@
 .contacts-item__link {
   @include vp-1199 {
     font-size: $fz-small-tablet;
-    line-height: $lh-default;
+    line-height: $fz-h2-mobile;
   }
 
   @include vp-767 {
-    line-height: $lh-small;
+    line-height: calc($fz-h3-desktop - 1px);
   }
 }
 
@@ -59,12 +59,12 @@
 
   @include vp-1199 {
     font-size: $fz-small-tablet;
-    line-height: $lh-default;
+    line-height: $fz-h2-mobile;
   }
 
   @include vp-767 {
     font-size: $fz-small-tablet;
-    line-height: $lh-small;
+    line-height: calc($fz-h3-desktop - 1px);
   }
 }
 

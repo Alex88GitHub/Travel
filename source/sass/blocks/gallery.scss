@@ -16,7 +16,7 @@
   width: 275px;
   height: 449px;
 
-   @include vp-1199 {
+  @include vp-1199 {
     width: 253px;
     height: 450px;
   }
@@ -43,8 +43,8 @@
   position: relative;
   z-index: 1;
   margin: 0 0 24px;
-  font-size: $fz-h2;
-  line-height: $fz-h2;
+  font-size: $fz-h2-desktop;
+  line-height: $fz-h2-desktop;
   font-weight: $fw-extra-bold;
 
   &::after {
@@ -130,7 +130,7 @@
   @include vp-1199 {
     width: 420px;
     font-size: $fz-small-tablet;
-    line-height: $lh-default;
+    line-height: $fz-h2-mobile;
   }
 
   @include vp-767 {
@@ -181,7 +181,7 @@
     background-color: $color-resolution-blue;
   }
 
-  &:active svg{
+  &:active svg {
     color: $color-default-white;
   }
 }
@@ -193,8 +193,8 @@
 
 .gallery__btn-prev.swiper-button-disabled,
 .gallery__btn-next.swiper-button-disabled {
-background-color: $color-nobel;
-opacity: initial;
+  background-color: $color-nobel;
+  opacity: initial;
 }
 
 .gallery__slide-wrapper {

@@ -1,12 +1,10 @@
 // Vendor
 // ---------------------------------
-
 @import "vendor/normalize";
 @import "vendor/swiper";
 
 // Global
 // ---------------------------------
-
 @import "variables";
 @import "mixins";
 @import "global/fonts";
@@ -16,7 +14,6 @@
 
 // Blocks
 // ---------------------------------
-
 @import "blocks/btn";
 @import "blocks/modal";
 @import "blocks/custom-input";
@@ -40,12 +37,11 @@
 @import "blocks/advantages-item.scss";
 @import "blocks/advantages.scss";
 @import "blocks/gallery.scss";
-@import "blocks/form.scss";
+@import "blocks/feedback.scss";
 @import "blocks/contacts-item.scss";
 @import "blocks/contacts-list.scss";
 @import "blocks/social-list.scss";
 @import "blocks/contacts.scss";
-
 @import "blocks/footer-list.scss";
 @import "blocks/footer.scss";
 

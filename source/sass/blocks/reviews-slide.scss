@@ -29,16 +29,12 @@
 .reviews-slide__text-content p {
   margin: 0;
   font-size: $fz-small-tablet;
-  line-height: $lh-default;
+  line-height: $fz-h2-mobile;
 
   @include vp-1199 {
     margin: 0 0 10px;
     font-size: $fz-xsmall;
     line-height: $fz-h3-tablet;
-  }
-
-  @include vp-767 {
-
   }
 
   &:last-child {

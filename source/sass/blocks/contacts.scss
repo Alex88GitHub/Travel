@@ -1,7 +1,3 @@
-// .contacts {
-
-// }
-
 .contacts__wrapper {
   display: grid;
   grid-template-columns: auto 585px;
@@ -14,10 +10,6 @@
     display: block;
     margin: 0 0 40px;
   }
-
-  // @include vp-767 {
-  //   margin: 0 0 40px;
-  // }
 }
 
 .contacts__wrapper picture {
@@ -41,6 +33,8 @@
 }
 
 .contacts__text-content {
+  width: 500px;
+
   @include vp-1199 {
     width: 480px;
     margin: 0 0 40px;
@@ -57,7 +51,7 @@
 
   @include vp-767 {
     font-size: $fz-small-tablet;
-    line-height: $lh-small;
+    line-height: calc($fz-h3-desktop - 1px);
   }
 }
 

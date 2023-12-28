@@ -14,6 +14,16 @@
 
   transition: opacity $trans-default;
 
+  @include hover-focus {
+    color: $color-resolution-blue;
+    background-color: $color-default-white;
+    outline: 1px solid $color-resolution-blue;
+  }
+
+  &:active {
+    background-color: $color-resolution-blue;
+  }
+
   &:disabled {
     opacity: 0.5;
 
@@ -21,7 +31,8 @@
   }
 
   &--hero {
-    line-height: $lh-xsmall;
+    line-height: $fz-default;
+    user-select: none;
   }
 
   &--play {
@@ -47,8 +58,16 @@
       width: 100%;
     }
   }
+}
 
-  @include hover-focus {
-    opacity: 0.8;
+.btn.disabled {
+  background-color: $color-nobel;
+  pointer-events: none;
+}
+
+.btn.btn--play {
+  &:hover {
+    background-color: $color-transparent;
+    outline: none;
   }
 }
